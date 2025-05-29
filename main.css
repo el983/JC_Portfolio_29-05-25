@@ -1,0 +1,155 @@
+/* main.css */
+:root {
+  --color-accent: rgb(230, 170, 40);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a,
+p {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-family: "Basis Grotesque Pro";
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > div {
+  flex: 1;
+}
+
+.links-1,
+.links-2 {
+  display: flex;
+  gap: 2em;
+}
+
+.links-2 {
+  justify-content: flex-end;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo a {
+  font-family: 'Cherry Bomb One';
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+}
+
+.container {
+  width: 100%;
+  height: 2000vh;
+}
+
+.active-slide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  opacity: 0.35;
+  z-index: -1;
+}
+
+.active-slide img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.125);
+  filter: blur(50px);
+  opacity: 0;
+  /* no CSS transition here */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* When JS toggles .active, it will sit on top */
+.active-slide img.active {
+  z-index: 1;
+}
+
+.slider {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transform-style: preserve-3d;
+  perspective: 750px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slide-copy p {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "PP Monument Extended";
+  font-size: 13px;
+  font-weight: bolder;
+  line-height: 150%;
+  color: var(--color-accent);
+}
+
+.slide-copy p#index {
+  font-family: "Basis Grotesque Pro";
+  font-size: 11px;
+  font-weight: 400;
+  margin-bottom: 0.75em;
+}
+
+/* initial positions */
+#slide-1 { transform: translate(-50%, -50%) translateZ(-22500px); opacity:0; top:50%; left:70%; }
+#slide-2 { transform: translate(-50%, -50%) translateZ(-20000px); opacity:0; top:50%; left:30%; }
+#slide-3 { transform: translate(-50%, -50%) translateZ(-17500px); opacity:0; top:50%; left:70%; }
+#slide-4 { transform: translate(-50%, -50%) translateZ(-15000px); opacity:0; top:50%; left:30%; }
+#slide-5 { transform: translate(-50%, -50%) translateZ(-12500px); opacity:0; top:50%; left:70%; }
+#slide-6 { transform: translate(-50%, -50%) translateZ(-10000px); opacity:0; top:50%; left:30%; }
+#slide-7 { transform: translate(-50%, -50%) translateZ( -7500px); opacity:0; top:50%; left:70%; }
+#slide-8 { transform: translate(-50%, -50%) translateZ( -5000px); opacity:0; top:50%; left:30%; }
+#slide-9 { transform: translate(-50%, -50%) translateZ( -2500px); opacity:0.5; top:50%; left:70%; }
+#slide-10{ transform: translate(-50%, -50%) translateZ(     0px); opacity:1; top:50%; left:30%; }
