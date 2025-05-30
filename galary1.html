@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Pic Gallery</title>
+    <link rel="stylesheet" href="gal_style.css" />
+  </head>
+  <body>
+    <div class="background-blur" id="background-blur"></div>
+
+    <div
+      class="gallery-container"
+      ontouchstart="handleTouchStart(event)"
+      ontouchmove="handleTouchMove(event)"
+      ontouchend="handleTouchEnd()"
+      onmousedown="handleMouseDown(event)"
+      onmousemove="handleMouseMove(event)"
+      onmouseup="handleMouseUp()"
+      onmouseleave="handleMouseUp()"
+    >
+      <button class="nav-button left" onclick="handlePrev()">&#10094;</button>
+      <div class="gallery123" id="gallery"></div>
+      <button class="nav-button right" onclick="handleNext()">&#10095;</button>
+    </div>
+
+    <script src="gal_script.js"></script>
+  </body>
+</html>
