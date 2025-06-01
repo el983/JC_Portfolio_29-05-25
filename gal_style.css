@@ -1,3 +1,77 @@
+/* main.css */
+:root {
+  --color-accent: rgb(230, 170, 40);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  overflow: hidden;
+  background: #000
+}
+
+
+a,
+p {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-family: "Basis Grotesque Pro";
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > div {
+  flex: 1;
+}
+
+.links-1,
+.links-2 {
+  display: flex;
+  gap: 2em;
+}
+
+.links-2 {
+  justify-content: flex-end;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo a {
+  font-family: 'Cherry Bomb One';
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+}
+
+
 .background-blur {
   position: fixed;
   top: 0;
@@ -7,7 +81,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(30px) brightness(0.6);
+  filter: blur(70px) brightness(0.5);
   z-index: -1;
   transition: background-image 0.8s ease;
 }

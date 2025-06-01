@@ -91,5 +91,26 @@ function handleTouchEnd() {
   }
 }
 
+let lastScrollTime = 0;
+
+function handleWheelScroll(e) {
+  const now = Date.now();
+
+  // Prevent scroll spamming: only trigger once every 500ms
+  if (now - lastScrollTime < 500) return;
+
+  if (e.deltaY > 0) {
+    handleNext();
+  } else if (e.deltaY < 0) {
+    handlePrev();
+  }
+
+  lastScrollTime = now;
+  e.preventDefault();
+}
+
+window.addEventListener("wheel", handleWheelScroll, { passive: false });
+
+
 window.addEventListener("load", renderGallery);
 window.addEventListener("resize", renderGallery);
