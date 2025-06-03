@@ -119,6 +119,7 @@ function handleWheelScroll(e) {
   e.preventDefault();
 }
 
+
 window.addEventListener("wheel", handleWheelScroll, { passive: false });
 
 

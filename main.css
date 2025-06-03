@@ -27,7 +27,8 @@ img {
 }
 
 a,
-p {
+p,
+h5 {
   color: var(--color-accent);
   text-decoration: none;
   font-family: "Basis Grotesque Pro";
