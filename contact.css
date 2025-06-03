@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'Romie'; /* or any name you want */
+  src: url('assets/romie-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* main.css */
+:root {
+  --color-accent: rgb(230, 170, 40);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+a,
+p {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-family: "Basis Grotesque Pro";
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  z-index: 10;
+  width: 100vw;
+  border-bottom: 2px solid #d17900;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 20px;
+  line-height: 1.2;
+  font-feature-settings:
+    'liga' 1,
+    'dlig' 1,
+    'clig' 1,
+    'kern' 1,
+    'ss01' 1,
+    'ss02' 1,
+    'ss03' 1,
+    'ss05' 1,
+    'ss06' 1,
+    'ss10' 1,
+    'ss20' 1;
+  letter-spacing: -0.5px;
+  font-size: 4rem;
+  color: #d17900;
+  text-decoration: none;
+  transition: background 4s ease-in;
+}
+
+.dropdown-content a:hover {
+  background-color: #1a1a1a00;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > div {
+  flex: 1;
+}
+
+.links-1,
+.links-2 {
+  display: flex;
+  gap: 2em;
+}
+
+.links-2 {
+  justify-content: flex-end;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo a {
+  font-family: 'Cherry Bomb One';
+  font-size: 2rem;
+  z-index: 9999999;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+}
+.contact{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: black;
+    display: flex;
+    animation: curtainDrop 1s ease-out forwards;
+    transform: translateY(-100vh);
+    opacity: 0;
+}
+@keyframes curtainDrop {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.left{
+    position: relative;
+    color: rgb(214, 128, 8);
+
+}
+.left-mid{
+    position: absolute;
+    top: 30vh;
+}
+.left-mid-con{
+    /* background: red; */
+    padding-left: 42px;
+}
+.left-low{
+    position: absolute;
+    bottom: 0;
+    /* background: red; */
+
+}
+.left-low ul{
+    display: flex;
+    gap: 20px;
+}
+.left-low ul li a{
+    color: rgb(214, 128, 8);
+}
+
+.right{
+    position: absolute;
+    right: 0;
+    width: 45%;
+}
+.right img{
+    width: 100%;
+    height: 100vh;
+}

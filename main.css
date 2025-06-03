@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Romie'; /* or any name you want */
+  src: url('assets/romie-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* main.css */
 :root {
   --color-accent: rgb(230, 170, 40);
@@ -38,6 +45,62 @@ nav {
   z-index: 999;
 }
 
+
+.dropdown {
+  position: relative;
+  animation: curtainDrop 1s ease-out forwards;
+  transform: translateY(-100vh);
+  opacity: 0;
+}
+@keyframes curtainDrop {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  z-index: 10;
+  width: 100vw;
+  border-bottom: 2px solid #d17900;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 20px;
+  line-height: 1.2;
+  font-feature-settings:
+    'liga' 1,
+    'dlig' 1,
+    'clig' 1,
+    'kern' 1,
+    'ss01' 1,
+    'ss02' 1,
+    'ss03' 1,
+    'ss05' 1,
+    'ss06' 1,
+    'ss10' 1,
+    'ss20' 1;
+  letter-spacing: -0.5px;
+  font-size: 4rem;
+  color: #d17900;
+  text-decoration: none;
+  transition: background 4s ease-in;
+}
+
+.dropdown-content a:hover {
+  background-color: #1a1a1a00;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -70,6 +133,7 @@ nav > div {
 .logo a {
   font-family: 'Cherry Bomb One';
   font-size: 2rem;
+  z-index: 9999999;
   font-weight: bolder;
   letter-spacing: 0.2em;
 }
