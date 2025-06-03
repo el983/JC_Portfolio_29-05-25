@@ -19,20 +19,30 @@ function getTranslateZ() {
 
 function renderGallery() {
   gallery.innerHTML = "";
-  panels.forEach((src, i) => {
-    let offset = (i - currentIndex + panels.length) % panels.length;
-    if (offset > panels.length / 2) offset -= panels.length;
-    const isFocused = i === currentIndex;
 
+  const total = panels.length;
+  const prevIndex = (currentIndex - 1 + total) % total;
+  const nextIndex = (currentIndex + 1) % total;
+
+  const positions = [
+    { index: prevIndex, offset: -1 },
+    { index: currentIndex, offset: 0 },
+    { index: nextIndex, offset: 1 }
+  ];
+
+  positions.forEach(({ index, offset }) => {
+    const isFocused = offset === 0;
     const panel = document.createElement("div");
     panel.className = `panel ${isFocused ? "focused" : "blurred"}`;
-    panel.style.backgroundImage = `url(${src})`;
-    panel.style.transform = `rotateY(${offset * angle}deg) ${getTranslateZ()} ${!isFocused ? "scale(0.8)" : ""}`;
+    panel.style.backgroundImage = `url(${panels[index]})`;
+
+    const rotation = offset * angle;
+    const scale = isFocused ? 1 : 0.8;
+    panel.style.transform = `rotateY(${rotation}deg) ${getTranslateZ()} scale(${scale})`;
 
     gallery.appendChild(panel);
   });
 
-  // Set blurred background to match focused image
   const bg = document.getElementById("background-blur");
   bg.style.backgroundImage = `url(${panels[currentIndex]})`;
 }

@@ -1,57 +1,44 @@
-/* main.css */
-@font-face {
-  font-family: "Romie"; /* or any name you want */
-  src: url("assets/romie-regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* main.css */
-:root {
-  --color-accent: rgb(230, 170, 40);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
+  background-color: black;
+  color: #d17900;
+  font-family: 'Georgia', serif;
   overflow: hidden;
-  background: #000;
-  animation: curtainDrop 1s ease-out forwards;
-  transform: translateY(-100vh);
-  opacity: 0;
 }
 
-@keyframes curtainDrop {
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: black;
+  color: #d17900;
+  position: relative;
 }
 
-
-a,
-p {
-  color: var(--color-accent);
+.nav-left a,
+.nav-right a,
+.nav-center .logo {
+  color: #d17900;
   text-decoration: none;
-  font-family: "Basis Grotesque Pro";
-  text-transform: uppercase;
-  font-size: 12px;
+  margin: 0 10px;
+  font-size: 18px;
+  position: relative;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 1.5em 2em;
+.nav-center .logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.nav-left,
+.nav-right {
   display: flex;
   align-items: center;
-  z-index: 999;
+  gap: 20px;
 }
 
+/* Dropdown */
 .dropdown {
   position: relative;
 }
@@ -61,42 +48,30 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: black;
+  padding: 10px 0;
   z-index: 10;
-  width: 100vw;
-  animation: curtainDrop 1s ease-out forwards;
-  transform: translateY(-100vh);
-  opacity: 0;
-}
-
-@keyframes curtainDrop {
-  to {
-    transform: translateY(0);
-    border-bottom: 2px solid #d17900;
-    opacity: 1;
-  }
+  min-width: 100vw;
+  border-top: 1px solid #d17900;
 }
 
 .dropdown-content a {
   display: block;
   padding: 8px 20px;
-  line-height: 1.2;
-  font-feature-settings: "liga" 1, "dlig" 1, "clig" 1, "kern" 1, "ss01" 1,
-    "ss02" 1, "ss03" 1, "ss05" 1, "ss06" 1, "ss10" 1, "ss20" 1;
-  letter-spacing: -0.5px;
-  font-size: 4rem;
+  font-size: 16px;
   color: #d17900;
   text-decoration: none;
-  transition: background 4s ease-in;
+  transition: background 0.3s ease;
 }
 
 .dropdown-content a:hover {
-  background-color: #ffffff00;
+  background-color: #1a1a1a;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 
 footer {
   position: fixed;
@@ -108,32 +83,6 @@ footer {
   align-items: center;
 }
 
-nav > div {
-  flex: 1;
-}
-
-.links-1,
-.links-2 {
-  display: flex;
-  gap: 2em;
-}
-
-.links-2 {
-  justify-content: flex-end;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-}
-
-.logo a {
-  font-family: "Cherry Bomb One";
-  font-size: 2rem;
-  z-index: 9999999;
-  font-weight: bolder;
-  letter-spacing: 0.2em;
-}
 
 .background-blur {
   position: fixed;
@@ -174,12 +123,12 @@ nav > div {
 .panel {
   position: absolute;
   width: 180px;
-  height: 70%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  transition: transform 6s ease, opacity 6s ease;
+  transition: transform 0.5s ease;
 }
 
 .panel.focused {
@@ -189,8 +138,8 @@ nav > div {
 }
 
 .panel.blurred {
-  opacity: 0.4;
-  filter: blur(4px) brightness(0.7);
+  filter: blur(4px) brightness(0.6);
+  opacity: 0.7;
   z-index: 1;
 }
 
