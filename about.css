@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "Romie"; /* or any name you want */
+  src: url("assets/romie-regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* main.css */
+:root {
+  --color-accent: rgb(230, 170, 40);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background-color: #6a2f00;
+  color: #e9d7be;
+  line-height: 1.6;
+  overflow-x: hidden;
+  animation: curtainDrop1 1s ease-out forwards;
+  transform: translateY(-100vh);
+  opacity: 0;
+}
+
+@keyframes curtainDrop1 {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+a,
+p {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-family: "Basis Grotesque Pro";
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #6a2f00;
+  z-index: 10;
+  width: 100vw;
+  animation: curtainDrop 1s ease-out forwards;
+  transform: translateY(-100vh);
+  opacity: 0;
+}
+
+@keyframes curtainDrop {
+  to {
+    transform: translateY(0);
+    border-bottom: 2px solid #d17900;
+    opacity: 1;
+  }
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 20px;
+  line-height: 1.2;
+  font-feature-settings: "liga" 1, "dlig" 1, "clig" 1, "kern" 1, "ss01" 1,
+    "ss02" 1, "ss03" 1, "ss05" 1, "ss06" 1, "ss10" 1, "ss20" 1;
+  letter-spacing: -0.5px;
+  font-size: 4rem;
+  color: #d17900;
+  text-decoration: none;
+  transition: background 4s ease-in;
+}
+
+.dropdown-content a:hover {
+  background-color: #1a1a1a00;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav > div {
+  flex: 1;
+}
+
+.links-1,
+.links-2 {
+  display: flex;
+  gap: 2em;
+}
+
+.links-2 {
+  justify-content: flex-end;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo a {
+  font-family: "Cherry Bomb One";
+  font-size: 2rem;
+  z-index: 9999999;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+}
+
+/* Section Wrapper */
+.about-section {
+  position: relative;
+  padding: 60px 60px;
+}
+
+/* Background About Text */
+.about-background-text {
+  position: absolute;
+  font-size: 40vw;
+  color: #dfcdb0;
+  opacity: 0.2;
+  z-index: 0;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  bottom: -90%;
+  left: 0;
+  pointer-events: none;
+}
+
+/* Content Layer */
+.about-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  width: 40%;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: wheat;
+  text-transform: initial;
+  font-family: "Romie";
+}
+
+.about-image {
+  width: 20%;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Client Section */
+.clients-section {
+  margin-top: 180px;
+  text-align: center;
+  padding: 0px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.clients-section p {
+  width: 45%;
+  font-size: 1rem;
+  color: wheat;
+  text-transform: initial;
+  font-family: "Romie";
+}
