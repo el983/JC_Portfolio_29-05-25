@@ -1,16 +1,25 @@
+// const panels = [
+//   "assets/client3.png",
+//   "assets/client4.png",
+//   "assets/client5.jpeg",
+//   "assets/client6.jpeg",
+//   "assets/client7.jpeg",
+//   "assets/client8.jpeg",
+//   "assets/client9.jpeg",
+//   "assets/jcnije_nav.jpeg"
+// ];
+
 const panels = [
-  "assets/client3.png",
-  "assets/client4.png",
-  "assets/client5.jpeg",
-  "assets/client6.jpeg",
-  "assets/client7.jpeg",
-  "assets/client8.jpeg",
-  "assets/client9.jpeg",
-  "assets/jcnije_nav.jpeg"
+  { image: "assets/b1.jpeg", text: "Leadership Award – Adamas University 2020" },
+  { image: "assets/b2.jpeg", text: "Most Promising Educator of 2021 – South Asian Chamber of Research & Development" },
+  { image: "assets/b3.jpeg", text: "“Campus to Corporate - Guru of the year 2022” by Nikhil Bharat Shiksha Parishad" },
+  { image: "assets/b4.jpeg", text: "“Top Icon of India 2024” – Business Talkz Magazine" },
+  { image: "assets/b5.jpeg", text: "“Honorary Fellowship (Domain Management)” by All India Eminent Faculty Council of Engg. Mgmt. & Technology" },
+  
 ];
 
 let currentIndex = 0;
-const angle = 180 / (panels.length - 1);
+const angle = 30;
 const gallery = document.getElementById("gallery");
 
 function getTranslateZ() {
@@ -32,20 +41,32 @@ function renderGallery() {
 
   positions.forEach(({ index, offset }) => {
     const isFocused = offset === 0;
+    const panelData = panels[index];
+
     const panel = document.createElement("div");
     panel.className = `panel ${isFocused ? "focused" : "blurred"}`;
-    panel.style.backgroundImage = `url(${panels[index]})`;
+    panel.style.backgroundImage = `url(${panelData.image})`;
 
     const rotation = offset * angle;
     const scale = isFocused ? 1 : 0.8;
     panel.style.transform = `rotateY(${rotation}deg) ${getTranslateZ()} scale(${scale})`;
 
+    // Add text overlay
+    const textOverlay = document.createElement("div");
+    textOverlay.className = "panel-text";
+    textOverlay.textContent = panelData.text;
+
+    panel.appendChild(textOverlay);
     gallery.appendChild(panel);
   });
 
+  // Background blur update
   const bg = document.getElementById("background-blur");
-  bg.style.backgroundImage = `url(${panels[currentIndex]})`;
+  bg.style.backgroundImage = `url(${panels[currentIndex].image})`;
 }
+
+
+  
 
 function handleNext() {
   currentIndex = (currentIndex + 1) % panels.length;
