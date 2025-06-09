@@ -17,6 +17,7 @@
 }
 
 body {
+  overflow-y: auto;    /* allow vertical scroll */
   background: #000;
 }
 
@@ -219,3 +220,31 @@ nav > div {
 #slide-8 { transform: translate(-50%, -50%) translateZ( -5000px); opacity:0; top:50%; left:30%; }
 #slide-9 { transform: translate(-50%, -50%) translateZ( -2500px); opacity:0.5; top:50%; left:70%; }
 #slide-10{ transform: translate(-50%, -50%) translateZ(     0px); opacity:1; top:50%; left:30%; }
+
+
+/*--------------------------------------------------
+  TAGLINE SECTION
+--------------------------------------------------*/
+.tagline {
+  position: relative;
+  z-index: 10;                /* sit above the fixed slider */
+  height: 100vh;              /* full viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;           /* same as body for smooth cover */
+  overflow: hidden;
+}
+
+.tagline h1 {
+  margin: 0;
+  padding: 0 1rem;
+  color: var(--color-accent);
+  font-family: "Basis Grotesque Pro", sans-serif;
+  text-transform: uppercase;
+  /* fluid font-size: min 2rem, max 5rem, scales with viewport */
+  font-size: clamp(2rem, 8vw, 5rem);
+  letter-spacing: 0.2em;
+  text-align: center;
+  line-height: 1.2;
+}
