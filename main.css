@@ -33,6 +33,7 @@ h5 {
   color: var(--color-accent);
   text-decoration: none;
   font-family: "Basis Grotesque Pro";
+  
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -63,6 +64,7 @@ nav {
   animation: curtainDrop 1s ease-out forwards;
   transform: translateY(-100vh);
   opacity: 0;
+  
 }
 
 @keyframes curtainDrop {
@@ -77,23 +79,14 @@ nav {
   display: block;
   padding: 8px 20px;
   line-height: 1.2;
-  font-feature-settings:
-    'liga' 1,
-    'dlig' 1,
-    'clig' 1,
-    'kern' 1,
-    'ss01' 1,
-    'ss02' 1,
-    'ss03' 1,
-    'ss05' 1,
-    'ss06' 1,
-    'ss10' 1,
-    'ss20' 1;
+  
   letter-spacing: -0.5px;
   font-size: 4rem;
   color: #d17900;
   text-decoration: none;
   transition: background 4s ease-in;
+  font-family: "Romie", sans-serif;
+  font-weight: bold;
 }
 
 .dropdown-content a:hover {
@@ -203,10 +196,11 @@ nav > div {
 }
 
 .slide-copy p#index {
-  font-family: "Basis Grotesque Pro";
-  font-size: 11px;
-  font-weight: 400;
+  font-family: "Romie","Basis Grotesque Pro";
+  font-size: 1rem;
+  font-weight: 900;
   margin-bottom: 0.75em;
+  
 }
 
 /* initial positions */
@@ -230,17 +224,22 @@ nav > div {
   z-index: 10;                /* sit above the fixed slider */
   height: 100vh;              /* full viewport */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #000;           /* same as body for smooth cover */
   overflow: hidden;
+}
+.tagline img{
+  width: auto;
+  height: 50%;
 }
 
 .tagline h1 {
   margin: 0;
   padding: 0 1rem;
   color: var(--color-accent);
-  font-family: "Basis Grotesque Pro", sans-serif;
+  font-family: "Romie", sans-serif;
   text-transform: uppercase;
   /* fluid font-size: min 2rem, max 5rem, scales with viewport */
   font-size: clamp(2rem, 8vw, 5rem);

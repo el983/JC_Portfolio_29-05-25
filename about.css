@@ -68,6 +68,7 @@ nav {
   animation: curtainDrop 1s ease-out forwards;
   transform: translateY(-100vh);
   opacity: 0;
+  
 }
 
 @keyframes curtainDrop {
@@ -82,13 +83,14 @@ nav {
   display: block;
   padding: 8px 20px;
   line-height: 1.2;
-  font-feature-settings: "liga" 1, "dlig" 1, "clig" 1, "kern" 1, "ss01" 1,
-    "ss02" 1, "ss03" 1, "ss05" 1, "ss06" 1, "ss10" 1, "ss20" 1;
+  
   letter-spacing: -0.5px;
   font-size: 4rem;
   color: #d17900;
   text-decoration: none;
   transition: background 4s ease-in;
+  font-family: "Romie", sans-serif;
+  font-weight: bold;
 }
 
 .dropdown-content a:hover {
@@ -159,6 +161,9 @@ nav > div {
 .about-text {
   width: 40%;
 }
+.about-text p b{
+  font-size: 1.2rem;
+}
 
 .about-text p {
   font-size: 1rem;
@@ -197,4 +202,8 @@ nav > div {
   color: wheat;
   text-transform: initial;
   font-family: "Romie";
+}
+
+.clients-section p b{
+  font-size: 1.2rem;
 }
