@@ -156,6 +156,8 @@ nav > div {
 .left-low{
     position: absolute;
     bottom: 0;
+    margin-bottom: 30px;
+    padding-left: 42px;
     /* background: red; */
 
 }
@@ -165,7 +167,14 @@ nav > div {
 }
 .left-low ul li a{
     color: rgb(214, 128, 8);
+    /* transition: all ease-in; */
+
 }
+/* .left-low ul li a::hover{
+    color: rgb(214, 128, 8);
+    border-bottom: 1px solid rgb(214, 128, 8);
+    
+} */
 
 .right{
     position: absolute;
