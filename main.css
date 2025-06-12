@@ -5,6 +5,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Mootjungle'; /* or any name you want */
+  src: url('./assets/Mootjunglefreeversion-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-feature-settings: "sups" 1, "dlig" 1, "kern" 1, "ss01" 1, "ss02" 1, "salt" 1, "aalt" 1;
+}
+
 /* main.css */
 :root {
   --color-accent: rgb(230, 170, 40);
@@ -239,8 +247,8 @@ nav > div {
   margin: 0;
   padding: 0 1rem;
   color: var(--color-accent);
-  font-family: "Romie", sans-serif;
-  text-transform: uppercase;
+  font-family: "Mootjungle";
+  /* text-transform: uppercase; */
   /* fluid font-size: min 2rem, max 5rem, scales with viewport */
   font-size: clamp(2rem, 8vw, 5rem);
   letter-spacing: 0.2em;

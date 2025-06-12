@@ -1,0 +1,270 @@
+/* main.css */
+@font-face {
+  font-family: "Romie"; /* or any name you want */
+  src: url("assets/romie-regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* main.css */
+:root {
+  --color-accent: rgb(230, 170, 40);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background: #000;
+  animation: curtainDrop 1s ease-out forwards;
+  transform: translateY(-100vh);
+  opacity: 0;
+}
+
+@keyframes curtainDrop {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+a,
+p {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-family: "Basis Grotesque Pro";
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 10;
+  width: 100vw;
+  animation: curtainDrop 1s ease-out forwards;
+  transform: translateY(-100vh);
+  opacity: 0;
+}
+
+@keyframes curtainDrop {
+  to {
+    transform: translateY(0);
+    border-bottom: 2px solid #d17900;
+    opacity: 1;
+  }
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 20px;
+  line-height: 1.2;
+  
+  letter-spacing: -0.5px;
+  font-size: 4rem;
+  color: #d17900;
+  text-decoration: none;
+  transition: background 4s ease-in;
+  font-family: "Romie", sans-serif;
+  font-weight: bold;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffffff00;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > div {
+  flex: 1;
+}
+
+.links-1,
+.links-2 {
+  display: flex;
+  gap: 2em;
+}
+
+.links-2 {
+  justify-content: flex-end;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo a {
+  font-family: "Cherry Bomb One";
+  font-size: 2rem;
+  z-index: 9999999;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+}
+
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(70px) brightness(0.5);
+  z-index: -1;
+  transition: background-image 0.8s ease;
+}
+
+
+.gallery-container {
+  perspective: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery123 {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  position: absolute;
+  width: 180px;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 6s ease, opacity 6s ease;
+}
+
+.panel.focused {
+  filter: none;
+  opacity: 1;
+  z-index: 2;
+}
+
+.panel.blurred {
+  opacity: 0.4;
+  filter: blur(4px) brightness(0.7);
+  z-index: 1;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+}
+
+.nav-button.left {
+  left: 20px;
+}
+
+.nav-button.right {
+  right: 20px;
+}
+
+@media (max-width: 600px) {
+  .gallery-container {
+    padding: 1rem;
+  }
+
+  .panel {
+    width: 150px;
+    height: 100%;
+  }
+
+  .nav-button {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .nav-button.left {
+    left: 10px;
+  }
+
+  .nav-button.right {
+    right: 10px;
+  }
+}
+
+.panel-heading {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-accent);
+  font-family: "Romie", sans-serif;
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px black;
+  white-space: nowrap;
+}
+
+.panel-paragraph {
+  /* position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px; */
+  color: white;
+  font-size: 0.75rem;
+  background: rgba(0, 0, 0, 0);
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-transform: initial;
+  justify-content: center;
+  /* text-align: center; */
+  font-family: "Basis Grotesque Pro", sans-serif;
+}

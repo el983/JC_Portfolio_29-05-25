@@ -147,11 +147,81 @@ nav > div {
 }
 .left-mid{
     position: absolute;
-    top: 30vh;
+    top: 20vh;
 }
+.left-mid-btm{
+  position: absolute;
+  top: 45vh;
+  border: 1px solid rgb(214, 128, 8);
+  border-radius: 10px;
+  margin-left: 42px;
+  width: 34vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: red; */
+  padding: 20px;
+}
+
+.nme{
+  display: flex;
+  gap: 1rem;
+}
+
+.inp {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.inp label {
+  font-size: 1rem;
+  color: rgb(214, 128, 8);
+  margin-bottom: 4px;
+  display: block;
+  font-family: "Basis Grotesque Pro", sans-serif;
+  text-transform: uppercase;
+}
+
+.inp input,textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(214, 128, 8);
+  border-radius: 10px;
+  color: rgb(214, 128, 8);
+  font-size: 0.9rem;
+  outline: none;
+  font-family: "Basis Grotesque Pro", sans-serif;
+}
+
+
+.inp .btn button {
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(214, 128, 8);
+  border-radius: 10px;
+  color: rgb(214, 128, 8);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-family: "Basis Grotesque Pro", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .left-mid-con{
     /* background: red; */
     padding-left: 42px;
+    /* line-height: 2rem;
+    font-size: 2rem; */
+}
+.left-mid-con p{
+  line-height: 2rem;
+  font-size: 1.2rem;
+  text-transform: lowercase;
 }
 .left-low{
     position: absolute;
