@@ -1,11 +1,10 @@
 @font-face {
-  font-family: "Romie"; /* or any name you want */
+  font-family: "Romie";
   src: url("assets/romie-regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
-/* main.css */
 :root {
   --color-accent: rgb(230, 170, 40);
 }
@@ -68,7 +67,6 @@ nav {
   animation: curtainDrop 1s ease-out forwards;
   transform: translateY(-100vh);
   opacity: 0;
-  
 }
 
 @keyframes curtainDrop {
@@ -83,12 +81,9 @@ nav {
   display: block;
   padding: 8px 20px;
   line-height: 1.2;
-  
-  letter-spacing: -0.5px;
   font-size: 4rem;
   color: #d17900;
   text-decoration: none;
-  transition: background 4s ease-in;
   font-family: "Romie", sans-serif;
   font-weight: bold;
 }
@@ -123,18 +118,16 @@ nav > div {
 .logo a {
   font-family: "Cherry Bomb One";
   font-size: 2rem;
-  z-index: 9999999;
   font-weight: bolder;
   letter-spacing: 0.2em;
 }
 
-/* Section Wrapper */
+/* About Section */
 .about-section {
   position: relative;
-  padding: 60px 60px;
+  padding: 100px 60px 60px;
 }
 
-/* Background About Text */
 .about-background-text {
   position: absolute;
   font-size: 40vw;
@@ -148,28 +141,14 @@ nav > div {
   pointer-events: none;
 }
 
-/* Content Layer */
 .about-content {
   position: relative;
   z-index: 1;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.about-text {
-  width: 40%;
-}
-.about-text p b{
-  font-size: 1.2rem;
-}
-
-.about-text p {
-  font-size: 1rem;
-  color: wheat;
-  text-transform: initial;
-  font-family: "Romie";
+  gap: 2em;
 }
 
 .about-image {
@@ -183,27 +162,114 @@ nav > div {
   object-fit: cover;
 }
 
+.about-text {
+  width: 70%;
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 1s ease-out;
+  font-family: "Romie";
+  color: wheat;
+  text-transform: initial;
+}
+
+.about-text p b {
+  font-size: 1.5rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+}
+
+/* Animation Classes */
+.animate-left {
+  animation: slideInLeft 2s ease-out forwards;
+}
+
+.animate-right {
+  animation: slideInRight 2s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 /* Client Section */
 .clients-section {
-  margin-top: 180px;
+  /* margin-top: 5px; */margin-bottom: 10px;
   text-align: center;
   padding: 0px 20px;
-  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 2em;
   align-items: center;
   z-index: 2;
 }
 
-.clients-section p {
-  width: 45%;
-  font-size: 1rem;
+.client-text {
+  width: 70%;
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 1s ease-out;
+  font-family: "Romie";
   color: wheat;
   text-transform: initial;
-  font-family: "Romie";
 }
 
-.clients-section p b{
-  font-size: 1.2rem;
+.client-text p {
+  font-size: 1rem;
+}
+
+.client-text p b {
+  font-size: 1.5rem;
+}
+
+/* Client Animation */
+.animate-client-left {
+  animation: slideInLeftClient 2s ease-out forwards;
+}
+
+.animate-client-right {
+  animation: slideInRightClient 2s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slideInLeftClient {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRightClient {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

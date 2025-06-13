@@ -176,6 +176,7 @@ nav > div {
   position: absolute;
   width: 180px;
   height: 70%;
+  top: 20%;
   background-size: cover;
   background-position: center;
   border-radius: 12px;
