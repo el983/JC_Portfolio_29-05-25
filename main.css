@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'Romie'; /* or any name you want */
-  src: url('assets/romie-regular.otf') format('opentype');
+  font-family: 'Paris'; /* or any name you want */
+  src: url('assets/Hello\ Paris\ Sans\ Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-feature-settings: "kern" 1, "liga" 1, "locl" 1, "aalt" 1;
 }
 
 @font-face {
-  font-family: 'Mootjungle'; /* or any name you want */
-  src: url('./assets/Mootjunglefreeversion-Regular.ttf') format('truetype');
+  font-family: "EgyptianSlate"; /* or any name you want */
+  src: url("assets/EgyptianSlateLight.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
-  font-feature-settings: "sups" 1, "dlig" 1, "kern" 1, "ss01" 1, "ss02" 1, "salt" 1, "aalt" 1;
 }
 
 /* main.css */
@@ -25,6 +25,7 @@
 }
 
 body {
+  font-family: "EgyptianSlate";
   overflow-y: auto;    /* allow vertical scroll */
   background: #000;
 }
@@ -40,7 +41,6 @@ p,
 h5 {
   color: var(--color-accent);
   text-decoration: none;
-  font-family: "Basis Grotesque Pro";
   
   text-transform: uppercase;
   font-size: 12px;
@@ -93,7 +93,6 @@ nav {
   color: #d17900;
   text-decoration: none;
   transition: background 4s ease-in;
-  font-family: "Romie", sans-serif;
   font-weight: bold;
 }
 
@@ -247,9 +246,8 @@ nav > div {
   margin: 0;
   padding: 0 1rem;
   color: var(--color-accent);
-  font-family: "Mootjungle";
-  /* text-transform: uppercase; */
-  /* fluid font-size: min 2rem, max 5rem, scales with viewport */
+  font-family: 'Paris';
+  font-feature-settings: "kern" 1, "liga" 1, "locl" 1, "aalt" 1;
   font-size: clamp(2rem, 8vw, 5rem);
   letter-spacing: 0.2em;
   text-align: center;

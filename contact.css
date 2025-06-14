@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Romie'; /* or any name you want */
-  src: url('assets/romie-regular.otf') format('opentype');
+  font-family: "EgyptianSlate"; /* or any name you want */
+  src: url("assets/EgyptianSlateLight.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,15 +16,15 @@
   box-sizing: border-box;
 }
 
-body{
-    overflow: hidden;
+body {
+  font-family: "EgyptianSlate";
+  overflow: hidden;
 }
 
 a,
 p {
   color: var(--color-accent);
   text-decoration: none;
-  font-family: "Basis Grotesque Pro";
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -38,7 +38,6 @@ nav {
   align-items: center;
   z-index: 999;
 }
-
 
 .dropdown {
   position: relative;
@@ -58,24 +57,23 @@ nav {
 }
 
 @keyframes curtainDrop {
-    to {
-        transform: translateY(0);
-        border-bottom: 2px solid #d17900;
-        opacity: 1;
-    }
+  to {
+    transform: translateY(0);
+    border-bottom: 2px solid #d17900;
+    opacity: 1;
+  }
 }
 
 .dropdown-content a {
   display: block;
   padding: 8px 20px;
   line-height: 1.2;
-  
+
   letter-spacing: -0.5px;
   font-size: 4rem;
   color: #d17900;
   text-decoration: none;
   transition: background 4s ease-in;
-  font-family: "Romie", sans-serif;
   font-weight: bold;
 }
 
@@ -117,39 +115,38 @@ nav > div {
 }
 
 .logo a {
-  font-family: 'Cherry Bomb One';
+  font-family: "Cherry Bomb One";
   font-size: 2rem;
   z-index: 9999999;
   font-weight: bolder;
   letter-spacing: 0.2em;
 }
-.contact{
-    margin: 0;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    background: black;
-    display: flex;
-    animation: curtainDrop 1s ease-out forwards;
-    transform: translateY(-100vh);
-    opacity: 0;
+.contact {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: black;
+  display: flex;
+  animation: curtainDrop 1s ease-out forwards;
+  transform: translateY(-100vh);
+  opacity: 0;
 }
 @keyframes curtainDrop {
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-.left{
-    position: relative;
-    color: rgb(214, 128, 8);
-
+.left {
+  position: relative;
+  color: rgb(214, 128, 8);
 }
-.left-mid{
-    position: absolute;
-    top: 20vh;
+.left-mid {
+  position: absolute;
+  top: 20vh;
 }
-.left-mid-btm{
+.left-mid-btm {
   position: absolute;
   top: 45vh;
   border: 1px solid rgb(214, 128, 8);
@@ -163,7 +160,7 @@ nav > div {
   padding: 20px;
 }
 
-.nme{
+.nme {
   display: flex;
   gap: 1rem;
 }
@@ -180,11 +177,11 @@ nav > div {
   color: rgb(214, 128, 8);
   margin-bottom: 4px;
   display: block;
-  font-family: "Basis Grotesque Pro", sans-serif;
   text-transform: uppercase;
 }
 
-.inp input,textarea {
+.inp input,
+textarea {
   width: 100%;
   padding: 10px;
   background-color: transparent;
@@ -193,9 +190,7 @@ nav > div {
   color: rgb(214, 128, 8);
   font-size: 0.9rem;
   outline: none;
-  font-family: "Basis Grotesque Pro", sans-serif;
 }
-
 
 .inp .btn button {
   width: 100%;
@@ -207,42 +202,39 @@ nav > div {
   color: rgb(214, 128, 8);
   font-size: 0.9rem;
   text-transform: uppercase;
-  font-family: "Basis Grotesque Pro", sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.left-mid-con{
-    /* background: red; */
-    padding-left: 42px;
-    /* line-height: 2rem;
+.left-mid-con {
+  /* background: red; */
+  padding-left: 42px;
+  /* line-height: 2rem;
     font-size: 2rem; */
 }
-.left-mid-con p{
+.left-mid-con p {
   line-height: 2rem;
   font-size: 1.2rem;
   text-transform: lowercase;
 }
 
-.left-mid-con .con-no{
+.left-mid-con .con-no {
   text-transform: initial;
 }
-.left-low{
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 30px;
-    padding-left: 42px;
-    /* background: red; */
-
+.left-low {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+  padding-left: 42px;
+  /* background: red; */
 }
-.left-low ul{
-    display: flex;
-    gap: 20px;
+.left-low ul {
+  display: flex;
+  gap: 20px;
 }
-.left-low ul li a{
-    color: rgb(214, 128, 8);
-    /* transition: all ease-in; */
-
+.left-low ul li a {
+  color: rgb(214, 128, 8);
+  /* transition: all ease-in; */
 }
 /* .left-low ul li a::hover{
     color: rgb(214, 128, 8);
@@ -250,12 +242,12 @@ nav > div {
     
 } */
 
-.right{
-    position: absolute;
-    right: 0;
-    width: 45%;
+.right {
+  position: absolute;
+  right: 0;
+  width: 45%;
 }
-.right img{
-    width: auto;
-    height: 100vh;
+.right img {
+  width: auto;
+  height: 100vh;
 }

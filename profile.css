@@ -1,11 +1,10 @@
 /* main.css */
 @font-face {
-  font-family: "Romie"; /* or any name you want */
-  src: url("assets/romie-regular.otf") format("opentype");
+  font-family: "EgyptianSlate"; /* or any name you want */
+  src: url("assets/EgyptianSlateLight.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 /* main.css */
 :root {
   --color-accent: rgb(230, 170, 40);
@@ -18,6 +17,7 @@
 }
 
 body {
+  font-family: "EgyptianSlate";
   overflow: hidden;
   background: #000;
   animation: curtainDrop 1s ease-out forwards;
@@ -37,7 +37,6 @@ a,
 p {
   color: var(--color-accent);
   text-decoration: none;
-  font-family: "Basis Grotesque Pro";
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -87,7 +86,6 @@ nav {
   color: #d17900;
   text-decoration: none;
   transition: background 4s ease-in;
-  font-family: "Romie", sans-serif;
   font-weight: bold;
 }
 
@@ -248,7 +246,6 @@ nav > div {
   left: 50%;
   transform: translateX(-50%);
   color: var(--color-accent);
-  font-family: "Romie", sans-serif;
   font-size: 1.2rem;
   text-shadow: 0 0 10px black;
   white-space: nowrap;
@@ -267,5 +264,4 @@ nav > div {
   text-transform: initial;
   justify-content: center;
   /* text-align: center; */
-  font-family: "Basis Grotesque Pro", sans-serif;
 }

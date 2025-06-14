@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Romie";
-  src: url("assets/romie-regular.otf") format("opentype");
+  font-family: "EgyptianSlate"; /* or any name you want */
+  src: url("assets/EgyptianSlateLight.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: "Georgia", serif;
+  font-family: "EgyptianSlate";
   background-color: #6a2f00;
   color: #e9d7be;
   line-height: 1.6;
@@ -37,7 +37,6 @@ a,
 p {
   color: var(--color-accent);
   text-decoration: none;
-  font-family: "Basis Grotesque Pro";
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -84,7 +83,6 @@ nav {
   font-size: 4rem;
   color: #d17900;
   text-decoration: none;
-  font-family: "Romie", sans-serif;
   font-weight: bold;
 }
 
@@ -128,7 +126,7 @@ nav > div {
   padding: 100px 60px 60px;
 }
 
-.about-background-text {
+/* .about-background-text {
   position: absolute;
   font-size: 40vw;
   color: #dfcdb0;
@@ -139,7 +137,7 @@ nav > div {
   bottom: -90%;
   left: 0;
   pointer-events: none;
-}
+} */
 
 .about-content {
   position: relative;
@@ -167,7 +165,6 @@ nav > div {
   opacity: 0;
   transform: translateX(0);
   transition: all 1s ease-out;
-  font-family: "Romie";
   color: wheat;
   text-transform: initial;
 }
@@ -229,7 +226,6 @@ nav > div {
   opacity: 0;
   transform: translateX(0);
   transition: all 1s ease-out;
-  font-family: "Romie";
   color: wheat;
   text-transform: initial;
 }
