@@ -114,6 +114,20 @@ footer {
   align-items: center;
 }
 
+footer p{
+  font-size: 1rem;
+}
+
+.scroll-indicator{
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+
+.scroll-indicator-sym{
+  height: 5vh;
+}
+
 nav > div {
   flex: 1;
 }
@@ -134,7 +148,7 @@ nav > div {
 }
 
 .logo a {
-  font-family: 'Cherry Bomb One';
+  /* font-family: 'Cherry Bomb One'; */
   font-size: 2rem;
   z-index: 9999999;
   font-weight: bolder;

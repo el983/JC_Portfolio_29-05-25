@@ -22,3 +22,4 @@ function getCenterElementColor() {
 
 window.addEventListener('scroll', getCenterElementColor);
 window.addEventListener('load', getCenterElementColor);
+

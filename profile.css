@@ -127,7 +127,7 @@ nav > div {
 }
 
 .logo a {
-  font-family: "Cherry Bomb One";
+  /* font-family: "Cherry Bomb One"; */
   font-size: 2rem;
   z-index: 9999999;
   font-weight: bolder;

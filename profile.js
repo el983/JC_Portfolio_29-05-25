@@ -183,3 +183,11 @@ window.addEventListener("touchmove", handleTouchMove);
 window.addEventListener("touchend", handleTouchEnd);
 window.addEventListener("load", renderGallery);
 window.addEventListener("resize", renderGallery);
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const totalHeight = document.body.scrollHeight - window.innerHeight;
+  const scrollPercent = Math.round((scrollTop / totalHeight) * 100);
+
+  document.getElementById("scrollPercent").textContent = `${scrollPercent}%`;
+});

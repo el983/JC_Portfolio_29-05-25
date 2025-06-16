@@ -69,3 +69,12 @@ window.addEventListener("load", () => {
   setInterval(updateTime, 1000);
   updateTime();
 });
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const totalHeight = document.body.scrollHeight - window.innerHeight;
+  const scrollPercent = Math.round((scrollTop / totalHeight) * 100);
+
+  document.getElementById("scrollPercent").textContent = `${scrollPercent}%`;
+});
+

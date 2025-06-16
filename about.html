@@ -33,6 +33,7 @@
       <a href="contact.html">Contact</a>
     </div>
   </nav>
+  
 
   <section class="about-section">
     <!-- <div class="about-background-text">About</div> -->
@@ -111,6 +112,13 @@
       rightClient.classList.add('animate-client-right');
     }
   });
+  window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const totalHeight = document.body.scrollHeight - window.innerHeight;
+  const scrollPercent = Math.round((scrollTop / totalHeight) * 100);
+
+  document.getElementById("scrollPercent").textContent = `${scrollPercent}%`;
+});
 </script>
 
 </body>
