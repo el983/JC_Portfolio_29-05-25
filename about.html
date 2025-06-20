@@ -111,14 +111,21 @@
 
 // Scroll-triggered animation for client section
 window.addEventListener('scroll', () => {
-  document.querySelector('.about-text.right').classList.add('animate-right');
+  const middle=document.querySelector('.about-text.right');
   const leftClient = document.querySelector('.left-client');
   const rightClient = document.querySelector('.right-client');
   const triggerPoint = window.innerHeight * 0.9; // 90% viewport height
 
+  const middleTop=middle.getBoundingClientRect().top
   const leftClientTop = leftClient.getBoundingClientRect().top;
   const rightClientTop = rightClient.getBoundingClientRect().top;
 
+
+  if(middleTop<triggerPoint){
+    middle.classList.add('animate-right')
+  }else{
+    middle.classList.remove('animate-right')
+  }
   // Animate when entering viewport
   if (leftClientTop < triggerPoint) {
     leftClient.classList.add('animate-client-left');
