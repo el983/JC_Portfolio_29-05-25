@@ -3,40 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3D Pic Gallery</title>
-    <link rel="stylesheet" href="gal2_style.css" />
+    <title>JC- I AM</title>
+    <link rel="stylesheet" href="gal_style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar">
-    <div class="nav-left">
-      <div class="dropdown">
-        <a href="#">WORKS</a>
-        <div class="dropdown-content">
-          <a href="#">ADVERTISING</a>
-          <a href="#">EDITORIAL</a>
-          <a href="#">DIARY</a>
-          <a href="#">MOTION</a>
+        <nav>
+      <div class="links-1">
+        <div class="dropdown">
+          <a>WORKS</a>
+          <div class="dropdown-content">
+            <a href="profile.html">I AM</a>
+            <a href="awards.html">AWARDS</a>
+            <a href="galary1.html">EDUCATIONAL <br> TIMELINE</a>
+             <a href="galary2.html">VIDEOS/BLOGS</a>
+          </div>
+        </div>
+        <div>
+          <a href="archieve.html">ARCHIVE</a>
         </div>
       </div>
-      <a href="#">ARCHIVE</a>
-      <a href="#">PDF</a>
-    </div>
 
-    <div class="nav-center">
-      <a href="#" class="logo">SAGEEAST</a>
-    </div>
+      <div class="logo">
+        <a href="index.html">Joy Chowdhury</a>
+      </div>
 
-    <div class="nav-right">
-      <a href="#">ABOUT</a>
-      <a href="#">CONTACT</a>
-    </div>
-  </nav>
-
-    <footer>
-      <p>Watch Showreel</p>
-      <p>Coming Soon</p>
+      <div class="links-2">
+        <h5>Currently in Kolkata — <span id="current-time"></span></h5>
+        <a href="about.html">About</a>
+        <!-- <a href="#">Info</a> -->
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+     <footer>
+      <p>© 2025 All Rights Reserved by Sikharthy Infotech</p>
+      <!-- <p>Coming Soon</p> -->
+       <!-- <p class="scroll-indicator"><img src="./assets/Animation - 1750069157342.gif" alt="" class="scroll-indicator-sym"><span id="scrollPercent">0%</span></p> -->
     </footer>
+    
     <div class="background-blur" id="background-blur"></div>
 
     <div
@@ -54,6 +58,7 @@
       <button class="nav-button right" onclick="handleNext()">&#10095;</button>
     </div>
 
+    
     <script src="gal_script.js"></script>
   </body>
 </html>

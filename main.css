@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'Paris'; /* or any name you want */
-  src: url('assets/Hello\ Paris\ Sans\ Medium.ttf') format('truetype');
+  font-family: 'Moot'; /* or any name you want */
+  src: url('assets/Mootjunglefreeversion-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-feature-settings: "kern" 1, "liga" 1, "locl" 1, "aalt" 1;
+  font-feature-settings: "kern" 1, "ss01" 1, "salt" 1, "aalt" 1,"dlig" 1,"ss02" 1,"sups" 1;
 }
 
 @font-face {
@@ -210,15 +210,15 @@ nav > div {
   text-transform: uppercase;
   text-align: center;
   font-family: "PP Monument Extended";
-  font-size: 13px;
+  font-size: 1.5rem;
   font-weight: bolder;
   line-height: 150%;
   color: var(--color-accent);
 }
 
 .slide-copy p#index {
-  font-family: "Romie","Basis Grotesque Pro";
-  font-size: 1rem;
+  /* font-family: "Romie","Basis Grotesque Pro"; */
+  font-size: 1.5rem;
   font-weight: 900;
   margin-bottom: 0.75em;
   
@@ -260,10 +260,14 @@ nav > div {
   margin: 0;
   padding: 0 1rem;
   color: var(--color-accent);
-  font-family: 'Paris';
-  font-feature-settings: "kern" 1, "liga" 1, "locl" 1, "aalt" 1;
+  font-family: 'Moot';
+  font-feature-settings:  "aalt" 1;
   font-size: clamp(2rem, 8vw, 5rem);
   letter-spacing: 0.2em;
   text-align: center;
   line-height: 1.2;
+}
+
+.tagline h1 span{
+  font-feature-settings:  "aalt" 0;
 }

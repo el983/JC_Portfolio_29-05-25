@@ -184,6 +184,25 @@ window.addEventListener("touchend", handleTouchEnd);
 window.addEventListener("load", renderGallery);
 window.addEventListener("resize", renderGallery);
 
+function updateTime() {
+    const now = new Date();
+    const options = {
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true,
+      timeZone: 'Asia/Kolkata'
+    };
+    const timeString = now.toLocaleTimeString('en-IN', options);
+    const timeElem = document.getElementById("current-time");
+    if (timeElem) {
+      timeElem.textContent = timeString;
+    }
+  }
+
+  setInterval(updateTime, 1000);
+  updateTime();
+
 window.addEventListener("scroll", () => {
   const scrollTop = window.scrollY;
   const totalHeight = document.body.scrollHeight - window.innerHeight;

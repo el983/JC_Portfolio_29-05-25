@@ -17,8 +17,9 @@
         <div class="dropdown-content">
           <a href="profile.html">I AM</a>
           <a href="awards.html">AWARDS</a>
-          <a href="galary1.html">EDUCATIONAL TIMELINE</a>
-          <a href="galary1.html">BLOGS</a>
+          <a href="galary1.html">EDUCATIONAL <br> TIMELINE</a>
+            <a href="galary2.html">VIDEOS/BLOGS</a>
+          
         </div>
       </div>
       <div><a href="archieve.html">ARCHIVE</a></div>
@@ -29,18 +30,19 @@
     </div>
 
     <div class="links-2">
+      <h5>Currently in Kolkata — <span id="current-time"></span></h5>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </div>
   </nav>
-  
+
 
   <section class="about-section">
     <!-- <div class="about-background-text">About</div> -->
 
     <div class="about-content">
       <div class="about-image">
-        <img src="assets/client4.png" alt="Sage East" />
+        <img src="assets/client3.png" alt="Sage East" />
       </div>
 
       <div class="about-text left">
@@ -73,53 +75,92 @@
       <div class="client-text left-client">
         <p>
           <b>The Genesis of a Visionary</b><br>
-          Joy Chowdhury's journey began not with a textbook, but with a question: “How do we help people become their
-          best selves—not just as professionals, but as people?” This question has guided his professional life and
-          shaped his interventions with individuals, institutions, and businesses across sectors...
+          Joy Chowdhury's journey began not with
+          a textbook, but with a question: “How do we help people become their best selves—not just as professionals,
+          but as people?” This question has guided his professional life and shaped his interventions with individuals,
+          institutions, and businesses across sectors.
+          With formal training in human development, leadership, and organizational psychology, Joy quickly realized
+          that traditional models of training—those focused on content delivery over human transformation—were no longer
+          enough. He pioneered methods that fused emotional intelligence, storytelling, coaching, and strategy, helping
+          organizations develop not only skill but insight.
         </p>
       </div>
       <div class="client-text right-client">
         <p>
           <b>Thought Leader in Learning & Development</b><br>
           Joy Chowdhury is not just a practitioner—he is a thought leader actively shaping the conversation around
-          21st-century learning...
+          21st-century learning. He has delivered keynote speeches at academic institutions, leadership forums, and
+          corporate conclaves. His topics often revolve around emotionally intelligent leadership, coaching cultures,
+          future-ready skills, and learning ecosystems for human capital development.
+          In his writings and talks, Joy emphasizes the role of learning as a strategic lever, not a peripheral HR
+          function. He makes the case that in an age of AI, automation, and anxiety, what organizations need most are
+          emotionally agile, resilient, and self-directed learners.
+          His frameworks on “Leading People, Not Just Projects” and “Cultivating Emotional Intelligence for Mentoring”
+          are widely adopted in higher education institutions and leadership programs across South Asia.
         </p>
       </div>
     </div>
   </div>
 
   <script>
-  // Trigger initial about-section animations
-  window.onload = () => {
-    document.querySelector('.about-text.left').classList.add('animate-left');
-    document.querySelector('.about-text.right').classList.add('animate-right');
-  };
+    // Trigger initial about-section animations
+    window.onload = () => {
+  document.querySelector('.about-text.left').classList.add('animate-left');
+  
+};
 
-  // Scroll-triggered animation for client section
-  window.addEventListener('scroll', () => {
-    const leftClient = document.querySelector('.left-client');
-    const rightClient = document.querySelector('.right-client');
-    const triggerPoint = window.innerHeight * 0.9; // Adjust trigger sensitivity
+// Scroll-triggered animation for client section
+window.addEventListener('scroll', () => {
+  document.querySelector('.about-text.right').classList.add('animate-right');
+  const leftClient = document.querySelector('.left-client');
+  const rightClient = document.querySelector('.right-client');
+  const triggerPoint = window.innerHeight * 0.9; // 90% viewport height
 
-    const leftClientTop = leftClient.getBoundingClientRect().top;
-    const rightClientTop = rightClient.getBoundingClientRect().top;
+  const leftClientTop = leftClient.getBoundingClientRect().top;
+  const rightClientTop = rightClient.getBoundingClientRect().top;
 
-    if (leftClientTop < triggerPoint && !leftClient.classList.contains('animate-client-left')) {
-      leftClient.classList.add('animate-client-left');
-    }
+  // Animate when entering viewport
+  if (leftClientTop < triggerPoint) {
+    leftClient.classList.add('animate-client-left');
+  } else {
+    leftClient.classList.remove('animate-client-left'); // Allow re-animation
+  }
 
-    if (rightClientTop < triggerPoint && !rightClient.classList.contains('animate-client-right')) {
-      rightClient.classList.add('animate-client-right');
-    }
-  });
-  window.addEventListener("scroll", () => {
-  const scrollTop = window.scrollY;
-  const totalHeight = document.body.scrollHeight - window.innerHeight;
-  const scrollPercent = Math.round((scrollTop / totalHeight) * 100);
+  if (rightClientTop < triggerPoint) {
+    rightClient.classList.add('animate-client-right');
+  } else {
+    rightClient.classList.remove('animate-client-right'); // Allow re-animation
+  }
 
-  document.getElementById("scrollPercent").textContent = `${scrollPercent}%`;
+  
 });
-</script>
+
+function updateTime() {
+    const now = new Date();
+    const options = {
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true,
+      timeZone: 'Asia/Kolkata'
+    };
+    const timeString = now.toLocaleTimeString('en-IN', options);
+    const timeElem = document.getElementById("current-time");
+    if (timeElem) {
+      timeElem.textContent = timeString;
+    }
+  }
+
+  setInterval(updateTime, 1000);
+  updateTime();
+    // window.addEventListener("scroll", () => {
+    //   const scrollTop = window.scrollY;
+    //   const totalHeight = document.body.scrollHeight - window.innerHeight;
+    //   const scrollPercent = Math.round((scrollTop / totalHeight) * 100);
+
+    //   document.getElementById("scrollPercent").textContent = `${scrollPercent}%`;
+    // });
+  </script>
 
 </body>
 
