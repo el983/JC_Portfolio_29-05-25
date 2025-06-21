@@ -1,0 +1,279 @@
+@font-face {
+  font-family: 'Moot'; /* or any name you want */
+  src: url('assets/Mootjunglefreeversion-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-feature-settings: "kern" 1, "ss01" 1, "salt" 1, "aalt" 1,"dlig" 1,"ss02" 1,"sups" 1;
+}
+
+@font-face {
+  font-family: "EgyptianSlate"; /* or any name you want */
+  src: url("assets/EgyptianSlateLight.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* main.css */
+:root {
+  --color-accent: rgb(230, 170, 40);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "EgyptianSlate";
+  overflow-y: auto;    /* allow vertical scroll */
+  background: #000;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a,
+p,
+h5 {
+  color: var(--color-accent);
+  text-decoration: none;
+  
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 10;
+  width: 100vw;
+  animation: curtainDrop 1s ease-out forwards;
+  transform: translateY(-100vh);
+  opacity: 0;
+  
+}
+
+@keyframes curtainDrop {
+    to {
+        transform: translateY(0);
+        border-bottom: 2px solid #d17900;
+        opacity: 1;
+    }
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 20px;
+  line-height: 1.2;
+  
+  letter-spacing: -0.5px;
+  font-size: 4rem;
+  color: #d17900;
+  text-decoration: none;
+  transition: background 4s ease-in;
+  font-weight: bold;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffffff00;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p{
+  font-size: 1rem;
+}
+
+.scroll-indicator{
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+
+.scroll-indicator-sym{
+  height: 5vh;
+}
+
+nav > div {
+  flex: 1;
+}
+
+.links-1,
+.links-2 {
+  display: flex;
+  gap: 2em;
+}
+
+.links-2 {
+  justify-content: flex-end;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo a {
+  /* font-family: 'Cherry Bomb One'; */
+  font-size: 2rem;
+  z-index: 9999999;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+}
+
+
+/* body {
+  font-family: Arial, sans-serif;
+  background: #f5f9ff;
+  margin: 0;
+  padding: 20px;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  /* width: 50%; */
+  /* max-width: 1000px; */
+  margin-top:100px ;
+  margin-bottom: 100px;
+  /* background: red; */
+}
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  gap: 30px;
+  align-items: center;
+  height: 70vh;
+  width: 65vw;
+   opacity: 0;
+  transform: translateX(0);
+  transition: all 0.5s ease;
+  /* background-color: blue; */
+}
+
+.slide.animate-left {
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.slide.animate-right {
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+/* When slide is visible in viewport */
+.slide.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.video-section iframe {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  /* width: 100%; */
+  /* max-width: 500px; */
+  width: 500px;
+  height: 280px;
+}
+
+.content-section {
+  max-width: 400px;
+}
+
+.date {
+  background-color: #e8f0ff;
+  color: #3366cc;
+  padding: 8px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.content-section h1 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #0a0a23;
+}
+
+.content-section p {
+  color: #555573;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  background: #b40000;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 10px 20px rgba(180, 0, 0, 0.3);
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #990000;
+}
+
+@media screen and (max-width: 768px) {
+  .slide {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-section {
+    max-width: 100%;
+  }
+
+  .video-section iframe {
+    width: 100%;
+    height: auto;
+  }
+}
