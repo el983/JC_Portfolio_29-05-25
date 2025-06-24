@@ -28,6 +28,7 @@ body {
   font-family: "EgyptianSlate";
   overflow-y: auto;    /* allow vertical scroll */
   background: #000;
+  overflow-x: hidden;
 }
 
 img {
@@ -153,6 +154,70 @@ nav > div {
   z-index: 9999999;
   font-weight: bolder;
   letter-spacing: 0.2em;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburger span {
+  background: var(--color-accent);
+  height: 3px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Mobile menu container */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 1.5rem;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Show hamburger and mobile menu under 450px */
+@media (max-width: 450px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .links-1,
+  .links-2 {
+    display: flex;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .container {
