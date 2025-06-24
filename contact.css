@@ -108,7 +108,7 @@ nav > div {
 .links-2 {
   justify-content: flex-end;
 }
-.links-2 a {
+.links-2 a,h5 {
    color: #000000; 
 }
 
