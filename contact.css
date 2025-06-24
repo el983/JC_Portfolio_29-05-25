@@ -107,7 +107,9 @@ nav > div {
 
 .links-2 {
   justify-content: flex-end;
-  color: #000000;
+}
+.links-2 a {
+   color: #000000; 
 }
 
 .logo {
