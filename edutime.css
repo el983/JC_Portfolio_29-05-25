@@ -210,6 +210,16 @@ nav > div {
   transform: translateX(0);
   opacity: 1;
 }
+
+.slide-style-1{
+  background: #d17900;
+
+}
+
+.slide-style-1 p{
+  color: white;
+  font-size: 3rem;
+}
 .content-section{
     padding: 2rem;
 }
@@ -218,6 +228,7 @@ nav > div {
 
 .content-section .second{
     font-size: 2rem;
+    margin-bottom: 20px;
     /* color: black;
     position: absolute;
     right: 10px; */
@@ -226,6 +237,7 @@ nav > div {
 .content-section .first{
     font-size: 3rem;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .date {
@@ -244,11 +256,11 @@ nav > div {
   color: #0a0a23;
 }
 
-.content-section p {
+/* .content-section p {
   color: #d17900;
   margin-bottom: 20px;
   font-size: 3rem;
-}
+} */
 
 .btn {
   text-decoration: none;

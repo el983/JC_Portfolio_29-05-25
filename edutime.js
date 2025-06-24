@@ -1,5 +1,12 @@
 const slides = [
   {
+    content1:"Group Vice-President - New Initiatives",
+    content2:"HERALD GROUP",
+    className:"slide-style-1"
+  },
+  
+  
+  {
    
     content1: "PhD Emotional Intelligence",
     content2:"Atlantic International University"
@@ -18,8 +25,11 @@ const slides = [
     
     content1: "Masters in Business Management<br>",
     content2:"Neptune Institute of Management"
-  }
+  },
+  
 ];
+
+
 
 const container = document.getElementById('slidesContainer');
 
@@ -27,6 +37,10 @@ slides.forEach((slide, index) => {
   const slideEl = document.createElement('div');
   slideEl.className = 'slide';
   slideEl.classList.add(index % 2 === 0 ? 'animate-left' : 'animate-right');
+
+  if (slide.className) {
+    slideEl.classList.add(slide.className);
+  }
 
   slideEl.innerHTML = `
    
