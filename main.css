@@ -337,7 +337,7 @@ nav > div {
   font-feature-settings:  "aalt" 0;
 } */
 
-.animate-scale {
+/* .animate-scale {
   transform: scale(0.5);
   opacity: 0;
   animation: scaleIn 1.2s ease-out forwards;
@@ -349,4 +349,4 @@ nav > div {
     transform: scale(1);
     opacity: 1;
   }
-}
+} */
