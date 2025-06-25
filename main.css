@@ -322,7 +322,7 @@ nav > div {
 }
 
 .tagline h1 {
-  margin: 0;
+  /* margin: 0; */
   padding: 0 1rem;
   color: var(--color-accent);
   font-family: 'EgyptianSlate';
@@ -336,3 +336,17 @@ nav > div {
 /* .tagline h1 span{
   font-feature-settings:  "aalt" 0;
 } */
+
+.animate-scale {
+  transform: scale(0.5);
+  opacity: 0;
+  animation: scaleIn 1.2s ease-out forwards;
+  margin-bottom: 50px;
+}
+
+@keyframes scaleIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
