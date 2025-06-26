@@ -12,6 +12,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Romie'; /* or any name you want */
+  src: url('assets/romie-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* main.css */
 :root {
@@ -325,7 +331,7 @@ nav > div {
   /* margin: 0; */
   padding: 0 1rem;
   color: var(--color-accent);
-  font-family: 'EgyptianSlate';
+  /* font-family: 'EgyptianSlate'; */
   font-size: clamp(2rem, 8vw, 5rem);
   font-weight: bold;
   letter-spacing: 0.2em;
@@ -333,20 +339,28 @@ nav > div {
   line-height: 1.2;
 }
 
+/* .animate-scale-2{
+  position: absolute;
+  bottom: 10;
+} */
 /* .tagline h1 span{
   font-feature-settings:  "aalt" 0;
 } */
 
-/* .animate-scale {
+.animate-scale {
+  /* position: absolute; */
+  font-family: "Romie";
   transform: scale(0.5);
   opacity: 0;
   animation: scaleIn 1.2s ease-out forwards;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
+
+
 
 @keyframes scaleIn {
   to {
     transform: scale(1);
     opacity: 1;
   }
-} */
+}
