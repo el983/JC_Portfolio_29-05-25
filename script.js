@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
     end: "bottom bottom",
     scrub: true,
     onUpdate: self => {
-      const zIncrement = self.progress * 22500;
+      const zIncrement = self.progress * 35000;
       let activeIndex = -1;
 
       slides.forEach((slide, i) => {
