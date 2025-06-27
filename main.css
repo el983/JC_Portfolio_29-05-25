@@ -319,8 +319,8 @@ nav > div {
 --------------------------------------------------*/
 .tagline {
   position: relative;
-  z-index: 10;                /* sit above the fixed slider */
-  height: 100vh;              /* full viewport */
+  z-index: 10;              
+  height: 100vh;              
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -370,3 +370,4 @@ nav > div {
     opacity: 1;
   }
 }
+
