@@ -62,7 +62,7 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #6a2f00;
+  background-color: #212121;
   z-index: 10;
   width: 100vw;
   animation: curtainDrop 1s ease-out forwards;
