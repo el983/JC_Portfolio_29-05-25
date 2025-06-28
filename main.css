@@ -351,7 +351,7 @@ nav > div {
   padding: 0 1rem;
   color: var(--color-accent);
   /* font-family: 'EgyptianSlate'; */
-  font-size: clamp(2rem, 8vw, 5rem);
+  font-size: clamp(2rem, 8vw, 3rem);
   font-weight: bold;
   letter-spacing: 0.2em;
   text-align: center;
