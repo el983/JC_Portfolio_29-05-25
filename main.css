@@ -328,7 +328,7 @@ nav > div {
   background: #000;           /* same as body for smooth cover */
   overflow: hidden;
 }
-.tagline h2 {
+/* .tagline h2 {
   /* margin: 0; */
   padding: 0 1rem;
   color: var(--color-accent);
@@ -339,9 +339,9 @@ nav > div {
   margin-left: -40%;
   text-align: left;
   line-height: 1.2;
-}
+} */
 
-/* .tagline h1{
+.tagline h1{
   /* margin: 0; */
   padding: 0 1rem;
   color: var(--color-accent);
@@ -351,7 +351,7 @@ nav > div {
   letter-spacing: 0.2em;
   text-align: center;
   line-height: 1.2;
-} */
+}
 /* .animate-scale-2{
   position: absolute;
   bottom: 10;
