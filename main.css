@@ -121,6 +121,12 @@ footer {
   align-items: center;
 }
 
+footer p.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 footer p{
   font-size: 1rem;
 }
