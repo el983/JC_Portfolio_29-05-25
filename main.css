@@ -370,7 +370,7 @@ nav > div {
   font-family: "Romie";
   transform: scale(0.5);
   opacity: 0;
-  animation: scaleIn 1.2s ease-out forwards;
+  animation: scaleIn 0.9s ease-out forwards;
   margin-bottom: 100px;
 }
 
