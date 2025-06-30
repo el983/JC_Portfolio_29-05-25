@@ -361,7 +361,7 @@ nav > div {
   height: 50%;
 }
 
-.tagline h2 {
+/* .tagline h2 {
   /* margin: 0; */
   padding: 0 1rem;
   color: var(--color-accent);
@@ -372,14 +372,14 @@ nav > div {
   margin-left: -40%;
   text-align: left;
   line-height: 1.2;
-}
+} */
 
 .tagline h1{
   /* margin: 0; */
   padding: 0 1rem;
   color: var(--color-accent);
   /* font-family: 'EgyptianSlate'; */
-  font-size: clamp(2rem, 8vw, 5rem);
+  font-size: clamp(2rem, 8vw, 6rem);
   font-weight: bold;
   letter-spacing: 0.2em;
   text-align: center;
