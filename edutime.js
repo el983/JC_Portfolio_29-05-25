@@ -40,8 +40,8 @@ const slides = [
     className:"slide-style-1",
   },
   {
-    content1:"Communication Trainer ",
-    content2:"PINNACLE ASSOCIATES",
+    content1:"Lead Trainer",
+    content2:"IBM",
     className:"slide-style-1",
   },
   {
@@ -50,11 +50,10 @@ const slides = [
     className:"slide-style-1",
   },
   {
-    content1:"Lead Trainer",
-    content2:"IBM",
+    content1:"Communication Trainer ",
+    content2:"PINNACLE ASSOCIATES",
     className:"slide-style-1",
   },
-  
 
   
 
@@ -66,7 +65,7 @@ const slides = [
   },
   {
     
-    content1: "Post Graduate Program on Strategic HR & Leadership<br>",
+    content1: "Post Graduate Diploma on Strategic HR & Leadership<br>",
      content2:"XLRI"
   },
   {
