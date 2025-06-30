@@ -48,7 +48,7 @@ slides.forEach((slide, index) => {
     <div class="content-section">
       <div class="date">${slide.date}</div>
       <h1>${slide.title}</h1>
-      // <p>${slide.content}</p>
+      
       <a href="${slide.youtubeLink}" target="_blank" class="btn">Watch on YouTube</a>
     </div>
   `;
