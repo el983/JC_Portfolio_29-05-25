@@ -7,11 +7,11 @@ const slides = [
     // content: 'Explore breathtaking mountain ranges with our expert guides...'
   },
   {
-    date: '15 January 2020',
-    title: 'Urban Exploration',
-    videoUrl: 'https://www.youtube.com/embed/2VY-GpXaAlQ?enablejsapi=1&mute=1',
-    youtubeLink: 'https://www.youtube.com/watch?v=2VY-GpXaAlQ',
-    content: 'Experience vibrant city life through our curated urban adventures...'
+    date: '9 June 2023',
+    title: 'Being Resourceful',
+    videoUrl: 'https://youtu.be/MkOE8p8tCzc',
+    youtubeLink: 'https://youtu.be/MkOE8p8tCzc',
+    // content: 'Experience vibrant city life through our curated urban adventures...'
   },
   {
     date: '3 March 2020',
