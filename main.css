@@ -361,18 +361,18 @@ nav > div {
   height: 50%;
 }
 
-/* .tagline h2 {
+.tagline h2 {
   /* margin: 0; */
   padding: 0 1rem;
   color: var(--color-accent);
   /* font-family: 'EgyptianSlate'; */
-  font-size: clamp(2rem, 8vw, 4rem);
+  font-size: clamp(2rem, 8vw, 10rem);
   font-weight: bold;
   letter-spacing: 0.2em;
   margin-left: -40%;
   text-align: left;
   line-height: 1.2;
-} */
+}
 
 .tagline h1{
   /* margin: 0; */
