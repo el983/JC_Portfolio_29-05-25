@@ -1,9 +1,9 @@
 const panels = [
-  "assets/Arc/s1.png",
-  "assets/Arc/s2.png",
-  "assets/Arc/s3.png",
-  "assets/Arc/s4.png",
-  "assets/Arc/s5.png",
+  "assets/Arc/c1.png",
+  "assets/Arc/c2.png",
+  "assets/Arc/c3.png",
+  "assets/Arc/c4.png",
+  "assets/Arc/c5.png",
   
 ];
 
