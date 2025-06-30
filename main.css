@@ -395,7 +395,7 @@ nav > div {
 
 .animate-scale {
   /* position: absolute; */
-  font-family: "Romie";
+  font-family: "Euphoria Script", cursive;
   transform: scale(0.5);
   opacity: 0;
   animation: scaleIn 0.9s ease-out forwards;
