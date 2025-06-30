@@ -1,10 +1,10 @@
 const slides = [
   {
-    date: '26 December 2019',
-    title: 'Mountain Adventures',
-    videoUrl: 'https://www.youtube.com/embed/Scxs7L0vhZ4',
-    youtubeLink: 'https://www.youtube.com/watch?v=Scxs7L0vhZ4',
-    content: 'Explore breathtaking mountain ranges with our expert guides...'
+    date: '30 June 2025',
+    title: 'Welcome to My Portfolio',
+    videoUrl: 'https://youtu.be/YZyiksDFbYg',
+    youtubeLink: 'https://youtu.be/YZyiksDFbYg',
+    // content: 'Explore breathtaking mountain ranges with our expert guides...'
   },
   {
     date: '15 January 2020',
