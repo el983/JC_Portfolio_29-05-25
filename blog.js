@@ -20,13 +20,13 @@ const slides = [
     youtubeLink: 'https://youtu.be/lRUJPp3IKF4?si=w4MJ3YS87UbDEy5e',
     // content: 'Discover pristine beaches and tropical paradises...'
   },
-  {
-    date: '12 April 2020',
-    title: 'Lakeside Retreats',
-    videoUrl: 'https://www.youtube.com/embed/IUN664s7N-c',
-    youtubeLink: 'https://www.youtube.com/watch?v=IUN664s7N-c',
-    content: 'Find peace and tranquility at stunning lakeside locations...'
-  }
+  // {
+  //   date: '12 April 2020',
+  //   title: 'Lakeside Retreats',
+  //   videoUrl: 'https://www.youtube.com/embed/IUN664s7N-c',
+  //   youtubeLink: 'https://www.youtube.com/watch?v=IUN664s7N-c',
+  //   content: 'Find peace and tranquility at stunning lakeside locations...'
+  // }
 ];
 
 const container = document.getElementById('slidesContainer');
@@ -48,7 +48,7 @@ slides.forEach((slide, index) => {
     <div class="content-section">
       <div class="date">${slide.date}</div>
       <h1>${slide.title}</h1>
-      <p>${slide.content}</p>
+      // <p>${slide.content}</p>
       <a href="${slide.youtubeLink}" target="_blank" class="btn">Watch on YouTube</a>
     </div>
   `;
