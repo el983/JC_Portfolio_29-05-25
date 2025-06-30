@@ -2,23 +2,23 @@ const slides = [
   {
     date: '30 June 2025',
     title: 'Welcome to My Portfolio',
-    videoUrl: 'https://youtu.be/YZyiksDFbYg',
-    youtubeLink: 'https://youtu.be/YZyiksDFbYg',
+    videoUrl: 'https://www.youtube.com/embed/YZyiksDFbYg?si=i4BaVlnw8Jiu4Dvo',
+    youtubeLink: 'https://youtu.be/YZyiksDFbYg?si=HDoumTc4zr-wAI7o',
     // content: 'Explore breathtaking mountain ranges with our expert guides...'
   },
   {
     date: '9 June 2023',
     title: 'Being Resourceful',
-    videoUrl: 'https://youtu.be/MkOE8p8tCzc',
-    youtubeLink: 'https://youtu.be/MkOE8p8tCzc',
+    videoUrl: 'https://www.youtube.com/embed/MkOE8p8tCzc?si=AXngzdwPiare9DKF',
+    youtubeLink: 'https://youtu.be/MkOE8p8tCzc?si=xc5bQjEm6qfMqZWs',
     // content: 'Experience vibrant city life through our curated urban adventures...'
   },
   {
-    date: '3 March 2020',
-    title: 'Beach Getaways',
-    videoUrl: 'https://www.youtube.com/embed/0ogH7rYuVtM?enablejsapi=1&mute=1',
-    youtubeLink: 'https://www.youtube.com/watch?v=0ogH7rYuVtM',
-    content: 'Discover pristine beaches and tropical paradises...'
+    date: '2 September 2022',
+    title: 'Technocrat 22 - Critical Thinking',
+    videoUrl: 'https://www.youtube.com/embed/lRUJPp3IKF4?si=ZtF37uvz1Kv9Ux3K',
+    youtubeLink: 'https://youtu.be/lRUJPp3IKF4?si=w4MJ3YS87UbDEy5e',
+    // content: 'Discover pristine beaches and tropical paradises...'
   },
   {
     date: '12 April 2020',
