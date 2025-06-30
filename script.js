@@ -49,7 +49,7 @@ window.addEventListener("load", () => {
     }
   });
 
-  // ⏰ Add this block for Kolkata time display
+  // 🕒 Kolkata Time Display
   function updateTime() {
     const now = new Date();
     const options = {
@@ -70,6 +70,7 @@ window.addEventListener("load", () => {
   updateTime();
 });
 
+// 📜 Scroll percentage display
 window.addEventListener("scroll", () => {
   const scrollTop = window.scrollY;
   const totalHeight = document.body.scrollHeight - window.innerHeight;
@@ -78,3 +79,29 @@ window.addEventListener("scroll", () => {
   document.getElementById("scrollPercent").textContent = `${scrollPercent}%`;
 });
 
+// 🎬 Watch Showreel popup logic
+document.addEventListener("DOMContentLoaded", function () {
+  const videoPopup = document.getElementById("videoPopup");
+  const iframe = document.getElementById("popupVideo");
+  // const watchBtn = document.querySelector(".center");
+  const watchBtn = document.getElementById("watchBtn");
+    const closeBtn = document.getElementById("closePopup");
+
+    videoPopup.style.display = "none";
+  iframe.src = "";
+
+  if (watchBtn) {
+    watchBtn.addEventListener("click", function () {
+      iframe.src = "https://www.youtube.com/embed/__60Mpw0dyM?autoplay=1";
+      videoPopup.style.display = "block";
+      
+    });
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", function () {
+      iframe.src = "";
+      videoPopup.style.display = "none";
+    });
+  }
+});
