@@ -361,21 +361,10 @@ nav > div {
   height: 50%;
 }
 
-.tagline h2 {
-  /* margin: 0; */
-  padding: 0 1rem;
-  color: var(--color-accent);
-  /* font-family: 'EgyptianSlate'; */
-  font-size: clamp(2rem, 8vw, 10rem);
-  font-weight: bold;
-  letter-spacing: 0.2em;
-  margin-left: -40%;
-  text-align: left;
-  line-height: 1.2;
-}
-
-.tagline h1{
-  /* margin: 0; */
+.animate-scale {
+  font-family: "Euphoria Script", cursive;
+  transform: scale(0.5);
+  opacity: 0;
   padding: 0 1rem;
   color: var(--color-accent);
   /* font-family: 'EgyptianSlate'; */
@@ -384,20 +373,6 @@ nav > div {
   letter-spacing: 0.2em;
   text-align: center;
   line-height: 1.2;
-}
-/* .animate-scale-2{
-  position: absolute;
-  bottom: 10;
-} */
-/* .tagline h1 span{
-  font-feature-settings:  "aalt" 0;
-} */
-
-.animate-scale {
-  /* position: absolute; */
-  font-family: "Euphoria Script", cursive;
-  transform: scale(0.5);
-  opacity: 0;
   animation: scaleIn 0.9s ease-out forwards;
   margin-bottom: 100px;
 }
