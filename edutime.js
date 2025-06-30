@@ -61,7 +61,7 @@ const slides = [
   {
    
     content1: "PhD Emotional Intelligence",
-    content2:"Atlantic International University"
+    content2:"Kennedy University, USA"
   },
   {
     
