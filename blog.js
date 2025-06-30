@@ -25,8 +25,20 @@ const slides = [
   //   title: 'Lakeside Retreats',
   //   videoUrl: 'https://www.youtube.com/embed/IUN664s7N-c',
   //   youtubeLink: 'https://www.youtube.com/watch?v=IUN664s7N-c',
-  //   content: 'Find peace and tranquility at stunning lakeside locations...'
-  // }
+  //   
+  // },
+  // {
+  //     date: '2 September 2022',
+  //   title: 'Technocrat 22 - Critical Thinking',
+  //   videoUrl: 'https://www.youtube.com/embed/lRUJPp3IKF4?si=ZtF37uvz1Kv9Ux3K',
+  //   youtubeLink: 'https://youtu.be/lRUJPp3IKF4?si=w4MJ3YS87UbDEy5e',
+  // },
+  // {
+  //   date: '2 September 2022',
+  //   title: 'Technocrat 22 - Critical Thinking',
+  //   videoUrl: 'https://www.youtube.com/embed/lRUJPp3IKF4?si=ZtF37uvz1Kv9Ux3K',
+  //   youtubeLink: 'https://youtu.be/lRUJPp3IKF4?si=w4MJ3YS87UbDEy5e',
+  // },
 ];
 
 const container = document.getElementById('slidesContainer');
