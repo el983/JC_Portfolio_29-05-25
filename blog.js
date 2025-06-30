@@ -4,21 +4,21 @@ const slides = [
     title: 'Welcome to My Portfolio',
     videoUrl: 'https://www.youtube.com/embed/YZyiksDFbYg?si=i4BaVlnw8Jiu4Dvo',
     youtubeLink: 'https://youtu.be/YZyiksDFbYg?si=HDoumTc4zr-wAI7o',
-    // content: 'Explore breathtaking mountain ranges with our expert guides...'
+    
   },
   {
     date: '9 June 2023',
     title: 'Being Resourceful',
     videoUrl: 'https://www.youtube.com/embed/MkOE8p8tCzc?si=AXngzdwPiare9DKF',
     youtubeLink: 'https://youtu.be/MkOE8p8tCzc?si=xc5bQjEm6qfMqZWs',
-    // content: 'Experience vibrant city life through our curated urban adventures...'
+    
   },
   {
     date: '2 September 2022',
     title: 'Technocrat 22 - Critical Thinking',
     videoUrl: 'https://www.youtube.com/embed/lRUJPp3IKF4?si=ZtF37uvz1Kv9Ux3K',
     youtubeLink: 'https://youtu.be/lRUJPp3IKF4?si=w4MJ3YS87UbDEy5e',
-    // content: 'Discover pristine beaches and tropical paradises...'
+    
   },
   // {
   //   date: '12 April 2020',
