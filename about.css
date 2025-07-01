@@ -123,10 +123,10 @@ nav > div {
 }
 
 /* About Section */
-.about-section {
+/* .about-section {
   position: relative;
   padding: 100px 60px 60px;
-}
+} */
 
 /* .about-background-text {
   position: absolute;
@@ -149,6 +149,8 @@ nav > div {
   text-align: center;
   align-items: center;
   gap: 2em;
+  padding: 100px 60px 60px;
+  /* background: red; */
 }
 
 .about-image {
@@ -272,4 +274,39 @@ nav > div {
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+@media (max-width:430px)
+{
+  .about-content{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+  }
+  .about-image{
+    height: 40vh;
+    width: 65vw;
+  }
+  .about-image img{
+    height: 100%;
+  }
+  .about-text p b{
+    font-size: 1.5rem;
+  }
+  .about-text p{
+    font-size: 1rem;
+  }
+  .clients-section{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+  }
+  .client-text p {
+  font-size: 1rem;
+  /* text-transform: initial; */
+}
+
+.client-text p b {
+  font-size: 1.5rem;
+}
 }

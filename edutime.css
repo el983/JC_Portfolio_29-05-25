@@ -338,7 +338,7 @@ nav > div {
     margin-bottom: 20px;
 }
 
-.date {
+/* .date {
   background-color: #e8f0ff;
   color: #3366cc;
   padding: 8px 14px;
@@ -352,7 +352,7 @@ nav > div {
   font-size: 24px;
   margin: 10px 0;
   color: #0a0a23;
-}
+} */
 
 /* .content-section p {
   color: #d17900;
@@ -360,7 +360,7 @@ nav > div {
   font-size: 3rem;
 } */
 
-.btn {
+/* .btn {
   text-decoration: none;
   background: #b40000;
   color: white;
@@ -374,16 +374,29 @@ nav > div {
 
 .btn:hover {
   background: #990000;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .slide {
     flex-direction: column;
     text-align: center;
+    
+  }
+  .container-head{
+    font-size: 2.5rem;
   }
 
   .content-section {
-    max-width: 100%;
+    /* max-width: 100%; */
+    /* background: red; */
+    text-align: center;
+  }
+  .content-section .first{
+    font-size: 2.2rem;
+  }
+
+  .edu-head{
+    font-size: 2.5rem;
   }
 
   .video-section iframe {
@@ -391,3 +404,4 @@ nav > div {
     height: auto;
   }
 }
+
