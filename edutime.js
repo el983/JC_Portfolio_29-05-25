@@ -40,8 +40,8 @@ const slides = [
     className:"slide-style-1",
   },
   {
-    content1:"Lead Trainer",
-    content2:"IBM",
+    content1:"Communication Trainer ",
+    content2:"PINNACLE ASSOCIATES",
     className:"slide-style-1",
   },
   {
@@ -50,22 +50,21 @@ const slides = [
     className:"slide-style-1",
   },
   {
-    content1:"Communication Trainer ",
-    content2:"PINNACLE ASSOCIATES",
+    content1:"Lead Trainer",
+    content2:"IBM",
     className:"slide-style-1",
   },
+];
 
-  
-
-  
+const slides1=[
   {
    
     content1: "PhD Emotional Intelligence",
-    content2:"Kennedy University, USA"
+    content2:"Atlantic International University"
   },
   {
     
-    content1: "Post Graduate Diploma on Strategic HR & Leadership<br>",
+    content1: "Post Graduate Program on Strategic HR & Leadership<br>",
      content2:"XLRI"
   },
   {
@@ -78,8 +77,7 @@ const slides = [
     content1: "Masters in Business Management<br>",
     content2:"Neptune Institute of Management"
   },
-  
-];
+]
 
 
 
@@ -120,6 +118,46 @@ const observer = new IntersectionObserver(entries => {
 });
 
 document.querySelectorAll('.slide').forEach(slide => observer.observe(slide));
+
+// for edu section
+
+const container1 = document.getElementById('slidesContainer-edubody');
+
+slides1.forEach((slide1, index) => {
+  const slideEl1 = document.createElement('div');
+  slideEl1.className = 'slide1';
+  slideEl1.classList.add(index % 2 === 0 ? 'animate-left' : 'animate-right');
+
+  if (slide1.className) {
+    slideEl1.classList.add(slide1.className);
+  }
+
+  slideEl1.innerHTML = `
+   
+    <div class="content-section">
+      <p class="first">${slide1.content1}</p>
+      <p class="second">${slide1.content2}</p>
+      
+    </div>
+  `;
+
+  container1.appendChild(slideEl1);
+});
+
+// ✅ Observer that re-triggers animation on scroll
+const observer1 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    } else {
+      entry.target.classList.remove("visible");
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+document.querySelectorAll('.slide1').forEach(slide1 => observer.observe(slide1));
 
 // Optional Clock
 function updateTime() {
