@@ -12,8 +12,11 @@ const angle = 180 / (panels.length - 1);
 const gallery = document.getElementById("gallery");
 
 function getTranslateZ() {
-  return window.innerWidth <= 600 ? "translateZ(90vw)" : "translateZ(40vw)";
+  if (window.innerWidth <= 480) return "translateZ(50vw)";
+  if (window.innerWidth <= 768) return "translateZ(80vw)";
+  return "translateZ(40vw)";
 }
+
 
 function renderGallery() {
   gallery.innerHTML = "";
