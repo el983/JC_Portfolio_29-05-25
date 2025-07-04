@@ -1,12 +1,4 @@
 @font-face {
-  font-family: 'Moot'; /* or any name you want */
-  src: url('assets/Mootjunglefreeversion-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-feature-settings: "kern" 1, "ss01" 1, "salt" 1, "aalt" 1,"dlig" 1,"ss02" 1,"sups" 1;
-}
-
-@font-face {
   font-family: "EgyptianSlate"; /* or any name you want */
   src: url("assets/EgyptianSlateLight.TTF") format("truetype");
   font-weight: normal;
@@ -26,7 +18,7 @@
 
 body {
   font-family: "EgyptianSlate";
-  overflow-y: auto;    /* allow vertical scroll */
+  overflow-x: hidden;
   background: #000;
 }
 
@@ -41,7 +33,7 @@ p,
 h5 {
   color: var(--color-accent);
   text-decoration: none;
-  
+
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -55,7 +47,6 @@ nav {
   align-items: center;
   z-index: 999;
 }
-
 
 .dropdown {
   position: relative;
@@ -72,22 +63,21 @@ nav {
   animation: curtainDrop 1s ease-out forwards;
   transform: translateY(-100vh);
   opacity: 0;
-  
 }
 
 @keyframes curtainDrop {
-    to {
-        transform: translateY(0);
-        border-bottom: 2px solid #d17900;
-        opacity: 1;
-    }
+  to {
+    transform: translateY(0);
+    border-bottom: 2px solid #d17900;
+    opacity: 1;
+  }
 }
 
 .dropdown-content a {
   display: block;
   padding: 8px 20px;
   line-height: 1.2;
-  
+
   letter-spacing: -0.5px;
   font-size: 4rem;
   color: #d17900;
@@ -114,17 +104,17 @@ footer {
   align-items: center;
 }
 
-footer p{
+footer p {
   font-size: 1rem;
 }
 
-.scroll-indicator{
+.scroll-indicator {
   display: flex;
   gap: 1vw;
   align-items: center;
 }
 
-.scroll-indicator-sym{
+.scroll-indicator-sym {
   height: 5vh;
 }
 
@@ -155,7 +145,6 @@ nav > div {
   letter-spacing: 0.2em;
 }
 
-
 /* body {
   font-family: Arial, sans-serif;
   background: #f5f9ff;
@@ -168,15 +157,8 @@ nav > div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* gap: 7rem; */
-  /* width: 50%; */
-  /* max-width: 1000px; */
-  margin-top:100px ;
-  /* margin-bottom: 100px; */
-  /* background: red; */
+  margin-top: 100px;
 }
-
-
 
 .container {
   display: flex;
@@ -186,12 +168,12 @@ nav > div {
   gap: 7rem;
   /* width: 50%; */
   /* max-width: 1000px; */
-  margin-top:70px ;
+  margin-top: 70px;
   margin-bottom: 100px;
   /* background: red; */
 }
 
-.container-head{
+.container-head {
   font-size: 3rem;
   color: #d17900;
 }
@@ -207,7 +189,7 @@ nav > div {
   align-items: center;
   position: relative;
   width: 68vw;
-   opacity: 0;
+  opacity: 0;
   transform: translateX(0);
   transition: all 0.5s ease;
   /* background-color: blue; */
@@ -231,12 +213,11 @@ nav > div {
   opacity: 1;
 }
 
-.slide-style-1{
+.slide-style-1 {
   background: #6a2f00;
-
 }
 
-.slide-style-1 p{
+.slide-style-1 p {
   color: white;
   font-size: 3rem;
 }
@@ -256,14 +237,13 @@ nav > div {
   /* background: red; */
 }
 
-.edu-head{
+.edu-head {
   /* background: white; */
   font-size: 3rem;
   color: #d17900;
-
 }
 
-.edu-body{
+.edu-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -284,7 +264,7 @@ nav > div {
   align-items: center;
   position: relative;
   width: 68vw;
-   opacity: 0;
+  opacity: 0;
   transform: translateX(0);
   transition: all 0.5s ease;
   /* background-color: blue; */
@@ -308,100 +288,159 @@ nav > div {
   opacity: 1;
 }
 
-.slide1-style-1{
+.slide1-style-1 {
   background: #6a2f00;
-
 }
 
-.slide-style-1 p{
+.slide-style-1 p {
   color: white;
   font-size: 3rem;
 }
 
-.content-section{
-    padding: 2rem;
+.content-section {
+  padding: 2rem;
 }
 
-
-
-.content-section .second{
-    font-size: 2rem;
-    margin-bottom: 20px;
-    /* color: black;
+.content-section .second {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  /* color: black;
     position: absolute;
     right: 10px; */
-    
 }
-.content-section .first{
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-/* .date {
-  background-color: #e8f0ff;
-  color: #3366cc;
-  padding: 8px 14px;
-  border-radius: 20px;
-  display: inline-block;
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.content-section h1 {
-  font-size: 24px;
-  margin: 10px 0;
-  color: #0a0a23;
-} */
-
-/* .content-section p {
-  color: #d17900;
-  margin-bottom: 20px;
+.content-section .first {
   font-size: 3rem;
-} */
-
-/* .btn {
-  text-decoration: none;
-  background: #b40000;
-  color: white;
-  padding: 12px 22px;
-  border-radius: 30px;
   font-weight: bold;
-  box-shadow: 0 10px 20px rgba(180, 0, 0, 0.3);
-  transition: background 0.3s;
-  display: inline-block;
+  margin-bottom: 20px;
 }
 
-.btn:hover {
-  background: #990000;
-} */
+/* ============= Responsive adjustments ============= */
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
 
-@media screen and (max-width: 768px) {
-  .slide {
+  .panel {
+    width: 300px;
+    height: 40%;
+  }
+
+  .dropdown-content a {
+    font-size: 3rem;
+  }
+
+  .logo a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .links-1,
+  .links-2 {
+    justify-content: center;
+  }
+
+  footer {
     flex-direction: column;
     text-align: center;
-    
-  }
-  .container-head{
-    font-size: 2.5rem;
+    gap: 0.5em;
   }
 
-  .content-section {
-    /* max-width: 100%; */
-    /* background: red; */
-    text-align: center;
-  }
-  .content-section .first{
-    font-size: 2.2rem;
-  }
-
-  .edu-head{
-    font-size: 2.5rem;
-  }
-
-  .video-section iframe {
-    width: 100%;
-    height: auto;
+  .logo a {
+    font-size: 1.6rem;
   }
 }
 
+@media (max-width: 480px) {
+  .logo a {
+    font-size: 1.4rem;
+  }
+
+  nav {
+    padding: 1em;
+  }
+
+  .nav-button {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+/* Ensure text never gets too small */
+a,
+p,
+h5 {
+  font-size: clamp(0.7rem, 2vw, 1rem);
+}
+
+/* dropwown content css */
+
+@media (max-width: 768px) {
+  .dropdown-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 5em;
+    animation: curtainDropMobile 1s ease-out forwards;
+    transform: translateY(-100vh);
+    opacity: 0;
+    z-index: 9999999;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+
+  .dropdown-content a {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    text-align: left;
+  }
+
+  @keyframes curtainDropMobile {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+/* ======= Responsive adjustments & overflow fixes ======= */
+
+.slide, .slide1 {
+  width: min(90%, 68vw);
+}
+
+/* Responsive typography for big headings & slides */
+.slide-style-1 p,
+.slide1-style-1 p,
+.container-head,
+.edu-head,
+.content-section .first,
+.content-section .second {
+  font-size: clamp(1.5rem, 6vw, 3rem);
+  text-align: center;
+}
+
+/* Fix dropdown font on mobile to not be oversized */
+@media (max-width: 768px) {
+  .dropdown-content a {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
