@@ -249,11 +249,13 @@ nav > div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-transform: none !important;
   gap: 7rem;
-  text-transform: none;
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+.edu-body p{
+  text-transform: none;
 }
 
 .slide1 {
