@@ -250,6 +250,7 @@ nav > div {
   justify-content: center;
   align-items: center;
   gap: 7rem;
+  text-transform: none;
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -265,7 +266,6 @@ nav > div {
   align-items: center;
   position: relative;
   width: 68vw;
-  text-transform: none;
   opacity: 0;
   transform: translateX(0);
   transition: all 0.5s ease;
