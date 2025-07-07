@@ -429,9 +429,12 @@ h5 {
 .edu-head,
 .content-section .first,
 .content-section .second {
-  padding: 4rem;
   font-size: clamp(1.5rem, 6vw, 3rem);
   text-align: center;
+}
+
+.container-head{
+    padding: 4rem;
 }
 
 /* Fix dropdown font on mobile to not be oversized */
