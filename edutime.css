@@ -296,11 +296,13 @@ nav > div {
 
 .slide-style-1 p {
   color: white;
+  text-transform: none;
   font-size: 3rem;
 }
 
 .content-section {
   padding: 2rem;
+  text-transform: none;
 }
 
 .content-section .second {
