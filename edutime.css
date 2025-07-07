@@ -429,6 +429,7 @@ h5 {
 .edu-head,
 .content-section .first,
 .content-section .second {
+  padding: 4rem;
   font-size: clamp(1.5rem, 6vw, 3rem);
   text-align: center;
 }
