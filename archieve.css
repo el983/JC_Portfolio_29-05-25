@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Romie'; /* or any name you want */
-  src: url('assets/Hello\ Paris\ Sans\ Medium.ttf') format('truetype');
+  font-family: "Romie"; /* or any name you want */
+  src: url("assets/Hello\ Paris\ Sans\ Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,16 +16,14 @@
   --color-accent: rgb(0, 0, 0);
 }
 
-
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   font-family: "EgyptianSlate";
   height: 100%;
   /* font-family: 'Arial', sans-serif; */
@@ -37,7 +35,7 @@ p,
 h5 {
   color: var(--color-accent);
   text-decoration: none;
-  
+
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -54,7 +52,6 @@ nav {
   /* margin: 0; */
 }
 
-
 .dropdown {
   position: relative;
 }
@@ -70,22 +67,21 @@ nav {
   animation: curtainDrop 1s ease-out forwards;
   transform: translateY(-100vh);
   opacity: 0;
-  
 }
 
 @keyframes curtainDrop {
-    to {
-        transform: translateY(0);
-        border-bottom: 2px solid #000000;
-        opacity: 1;
-    }
+  to {
+    transform: translateY(0);
+    border-bottom: 2px solid #000000;
+    opacity: 1;
+  }
 }
 
 .dropdown-content a {
   display: block;
   padding: 8px 20px;
   line-height: 1.2;
-  
+
   letter-spacing: -0.5px;
   font-size: 4rem;
   color: #000000;
@@ -145,7 +141,7 @@ nav > div {
 }
 
 .image-section {
-  width: 25vw;
+  width: 100%;
   height: 100vh;
   position: relative;
   flex-shrink: 0;
@@ -170,4 +166,140 @@ nav > div {
   color: white; /* fallback */
   transition: color 0.3s ease;
   z-index: 100;
+}
+
+/* ============= Responsive adjustments ============= */
+
+@media (max-width: 1024px) {
+  .panel {
+    width: 300px;
+    height: 40%;
+  }
+
+  .dropdown-content a {
+    font-size: 3rem;
+  }
+
+  .logo a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .links-1,
+  .links-2 {
+    justify-content: center;
+  }
+
+  .panel {
+    width: 250px;
+    height: 60%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+  }
+
+  .logo a {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-container {
+    height: 80vh;
+    padding: 0 10px;
+  }
+
+  .panel {
+    width: 80%;
+    height: 50%;
+  }
+
+  .panel.blurred {
+    opacity: 0.1;
+    filter: blur(4px);
+    z-index: 1;
+  }
+
+  .logo a {
+    font-size: 1.4rem;
+  }
+
+  nav {
+    padding: 1em;
+  }
+
+  .nav-button {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+/* Ensure text never gets too small */
+a,
+p,
+h5 {
+  font-size: clamp(0.7rem, 2vw, 1rem);
+}
+
+/* dropwown content css */
+
+@media (max-width: 768px) {
+  .dropdown-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: none; /* default hidden */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 5em;
+    /* padding-left: 2em; */
+    animation: curtainDropMobile 1s ease-out forwards;
+    transform: translateY(-100vh);
+    opacity: 0;
+    z-index: 9999;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+
+  .dropdown-content a {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    text-align: left;
+  }
+
+  @keyframes curtainDropMobile {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .archive-text {
+    font-size: 2.5rem;
+  }
+
+  .gallery {
+    grid-template-columns: auto auto;
+  }
+
+  
+  .image-section {
+    height: 50vh;
+  }
+
 }
