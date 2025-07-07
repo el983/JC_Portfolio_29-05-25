@@ -40,8 +40,8 @@ const slides = [
     className:"slide-style-1",
   },
   {
-    content1:"Communication Trainer ",
-    content2:"PINNACLE ASSOCIATES",
+    content1:"Lead Trainer",
+    content2:"IBM",
     className:"slide-style-1",
   },
   {
@@ -50,8 +50,8 @@ const slides = [
     className:"slide-style-1",
   },
   {
-    content1:"Lead Trainer",
-    content2:"IBM",
+    content1:"Communication Trainer ",
+    content2:"PINNACLE ASSOCIATES",
     className:"slide-style-1",
   },
 ];
@@ -60,7 +60,7 @@ const slides1=[
   {
    
     content1: "PhD Emotional Intelligence",
-    content2:"Atlantic International University"
+    content2:"Kennedy University, USA"
   },
   {
     
