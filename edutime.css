@@ -220,6 +220,7 @@ nav > div {
 .slide-style-1 p {
   color: white;
   font-size: 3rem;
+  text-transform: none;
 }
 
 /* for edu cont */
@@ -294,6 +295,7 @@ nav > div {
 
 .slide-style-1 p {
   color: white;
+  text-transform: none;
   font-size: 3rem;
 }
 
