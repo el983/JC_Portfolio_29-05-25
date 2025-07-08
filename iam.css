@@ -150,7 +150,7 @@ nav > div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 2em;
+  padding: 4em;
 }
 
 .hero-left h1 {
