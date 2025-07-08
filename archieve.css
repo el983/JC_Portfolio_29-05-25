@@ -11,6 +11,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Zaslia"; /* or any name you want */
+  src: url("assets/Zaslia.otf") format("Opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
 /* main.css */
 :root {
   --color-accent: rgb(0, 0, 0);
@@ -131,6 +139,8 @@ nav > div {
   /* font-family: 'Cherry Bomb One'; */
   font-size: 2rem;
   z-index: 9999999;
+  font-family: "Zaslia";
+  font-feature-settings: "liga" 1, "kern" 1;
   font-weight: bolder;
   letter-spacing: 0.2em;
 }
