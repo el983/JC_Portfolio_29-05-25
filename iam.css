@@ -1,0 +1,236 @@
+/* main.css */
+@font-face {
+  font-family: "EgyptianSlate"; /* or any name you want */
+  src: url("assets/EgyptianSlateLight.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* main.css */
+:root {
+  --color-accent: rgb(230, 170, 40);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "EgyptianSlate";
+  overflow-x: hidden; /* changed */
+  background: #000;
+}
+
+a,
+p,
+h5 {
+  color: var(--color-accent);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 10;
+  width: 100vw;
+  animation: curtainDrop 1s ease-out forwards;
+  transform: translateY(-100vh);
+  opacity: 0;
+}
+
+@keyframes curtainDrop {
+  to {
+    transform: translateY(0);
+    border-bottom: 2px solid #d17900;
+    opacity: 1;
+  }
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 20px;
+  line-height: 1.2;
+  background-color: #000;
+  letter-spacing: -0.5px;
+  font-size: 4rem;
+  color: #d17900;
+  text-decoration: none;
+  transition: background 4s ease-in;
+  font-weight: bold;
+}
+
+.dropdown-content a:hover {
+  background-color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  color: var(--color-accent);
+}
+
+nav > div {
+  flex: 1;
+}
+
+.links-1,
+.links-2 {
+  display: flex;
+  gap: 2em;
+}
+
+.links-2 {
+  justify-content: flex-end;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo a {
+  font-size: 2rem;
+  z-index: 9999999;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.hero-left {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  color: var(--color-accent);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.hero-right {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8em;
+}
+
+.hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1em;
+}
+
+/* CONTAINER SECTIONS */
+.container {
+  height: 48vh;
+  width: 96vw;
+  margin: 2vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.split {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.half {
+  flex: 1;
+  margin: 0.5em;
+  background: rgba(122, 91, 22, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid var(--color-accent);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.half h2 {
+  font-size: 2.5rem;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.half p {
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: none;
+  color: var(--color-accent);
+  max-width: 90%;
+}
+
+
+/* ANIMATION CLASSES */
+.zoom-text {
+  opacity: 0;
+  transform: scale(0.6) translateY(50px);
+  transition: all 2s ease;
+}
+
+.zoom-text.show {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.half {
+  opacity: 0;
+  transform: scale(0.6) translateY(50px);
+  transition: all 0.8s ease;
+}
+
+
+.half.show {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}

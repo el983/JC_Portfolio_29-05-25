@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JC- I AM</title>
+    <link rel="stylesheet" href="profile.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+        <nav>
+      <div class="links-1">
+        <div class="dropdown">
+          <a>WORKS</a>
+          <div class="dropdown-content">
+            <a href="profile.html">I AM</a>
+            <a href="awards.html">AWARDS</a>
+            <a href="edutime.html">TIMELINE</a>
+             <a href="blog.html">VIDEOS/BLOGS</a>
+          </div>
+        </div>
+        <div>
+          <a href="archieve.html">ARCHIVE</a>
+        </div>
+      </div>
+
+      <div class="logo">
+        <a href="index.html">Joy Chowdhury</a>
+      </div>
+
+      <div class="links-2">
+        <h5>Currently in Kolkata — <span id="current-time"></span></h5>
+        <a href="about.html">About</a>
+        <!-- <a href="#">Info</a> -->
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <footer>
+      <p>© 2025 All Rights Reserved by Sikharthy Infotech</p>
+      <!-- <p>Coming Soon</p> -->
+       <!-- <p class="scroll-indicator"><img src="./assets/Animation - 1750069157342.gif" alt="" class="scroll-indicator-sym"><span id="scrollPercent">0%</span></p> -->
+    </footer>
+    <div class="background-blur" id="background-blur"></div>
+
+    <div
+      class="gallery-container"
+      ontouchstart="handleTouchStart(event)"
+      ontouchmove="handleTouchMove(event)"
+      ontouchend="handleTouchEnd()"
+      onmousedown="handleMouseDown(event)"
+      onmousemove="handleMouseMove(event)"
+      onmouseup="handleMouseUp()"
+      onmouseleave="handleMouseUp()"
+    >
+      <button class="nav-button left" onclick="handlePrev()">&#10094;</button>
+      <div class="gallery123" id="gallery"></div>
+      <button class="nav-button right" onclick="handleNext()">&#10095;</button>
+    </div>
+
+    <script src="profile.js"></script>
+  </body>
+</html>
