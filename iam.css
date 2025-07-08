@@ -5,6 +5,15 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Zaslia"; /* or any name you want */
+  src: url("assets/Zaslia.otf") format("Opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
 /* main.css */
 :root {
   --color-accent: rgb(230, 170, 40);
@@ -197,6 +206,8 @@ nav > div {
 
 .half h2 {
   font-size: 2.5rem;
+  font-family: "Zaslia";
+  font-feature-settings: "liga" 1, "kern" 1;
   color: var(--color-accent);
   text-transform: uppercase;
   letter-spacing: 1px;
