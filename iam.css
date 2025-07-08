@@ -131,9 +131,9 @@ nav > div {
 
 .logo a {
   font-size: 2rem;
+  z-index: 9999999;
   font-family: "Zaslia";
   font-feature-settings: "liga" 1, "kern" 1;
-  z-index: 9999999;
   font-weight: bolder;
   letter-spacing: 0.2em;
 }
@@ -246,4 +246,108 @@ nav > div {
 .half.show {
   opacity: 1;
   transform: scale(1) translateY(0);
+}
+
+/* ============= Responsive adjustments ============= */
+
+@media (max-width: 1024px) {
+  .dropdown-content a {
+    font-size: 3rem;
+  }
+
+  .logo a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .links-1,
+  .links-2 {
+    justify-content: center;
+  }
+
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+  }
+
+  .logo a {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-container {
+    height: 80vh;
+    padding: 0 10px;
+  }
+
+
+  .logo a {
+    font-size: 1.4rem;
+  }
+
+  nav {
+    padding: 1em;
+  }
+
+  .nav-button {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+/* Ensure text never gets too small */
+a,
+p,
+h5 {
+  font-size: clamp(0.7rem, 2vw, 1rem);
+}
+
+/* dropwown content css */
+
+@media (max-width: 768px) {
+  .dropdown-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: none; /* default hidden */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 5em;
+    /* padding-left: 2em; */
+    animation: curtainDropMobile 1s ease-out forwards;
+    transform: translateY(-100vh);
+    opacity: 0;
+    z-index: 9999;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+
+  .dropdown-content a {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    color: rgb(230, 170, 40);
+    text-align: left;
+  }
+
+  @keyframes curtainDropMobile {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }
