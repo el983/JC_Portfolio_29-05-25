@@ -27,7 +27,7 @@
 
 body {
   font-family: "EgyptianSlate";
-  overflow-x: hidden; /* changed */
+  overflow-x: hidden;
   background: #000;
 }
 
@@ -223,7 +223,6 @@ nav > div {
   max-width: 90%;
 }
 
-
 /* ANIMATION CLASSES */
 .zoom-text {
   opacity: 0;
@@ -241,7 +240,6 @@ nav > div {
   transform: scale(0.6) translateY(50px);
   transition: all 0.8s ease;
 }
-
 
 .half.show {
   opacity: 1;
@@ -271,7 +269,6 @@ nav > div {
     justify-content: center;
   }
 
-
   footer {
     flex-direction: column;
     text-align: center;
@@ -281,14 +278,17 @@ nav > div {
   .logo a {
     font-size: 1.6rem;
   }
+
+  .container:last-of-type {
+    margin-bottom: 2em; /* or whatever spacing you like */
+  }
 }
 
 @media (max-width: 480px) {
-  .gallery-container {
-    height: 80vh;
-    padding: 0 10px;
-  }
 
+  body{
+    overflow-x: hidden;
+  }
 
   .logo a {
     font-size: 1.4rem;
@@ -350,4 +350,84 @@ h5 {
       opacity: 1;
     }
   }
+}
+
+/* =======================================
+   Responsive adjustments for HERO section
+   ======================================= */
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 90vw;
+    padding: 2em;
+  }
+
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+
+  .hero-right {
+    padding: 2em 2em 4em 2em;
+  }
+}
+
+/* ==========================================
+   Responsive adjustments for SPLIT containers
+   ========================================== */
+
+@media (max-width: 768px) {
+  .split {
+    flex-direction: column;
+  }
+
+  .half {
+    width: 90%;
+    margin: 0.5em auto;
+    text-align: center;
+  }
+
+  .half h2 {
+    font-size: 2rem;
+  }
+
+  .half p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ==========================================
+   Even smaller adjustments for mobile
+   ========================================== */
+@media (max-width: 480px) {
+  .hero-left h1 {
+    font-size: 1.6rem;
+  }
+
+  .half h2 {
+    font-size: 1.6rem;
+  }
+
+  .half p {
+    font-size: 0.8rem;
+  }
+
+  .hero-right {
+    padding: 1em;
+  }
+}
+
+.hero-left h1 {
+  font-size: clamp(1.6rem, 5vw, 3rem);
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.hero-left {
+  margin-top: 6em;
 }
