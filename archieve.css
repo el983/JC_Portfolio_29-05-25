@@ -169,7 +169,8 @@ nav > div {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 6rem;
-  font-family: "Romie";
+  font-family: "Zaslia";
+  font-feature-settings: "liga" 1, "kern" 1;
   font-weight: bold;
   pointer-events: none;
   mix-blend-mode: difference;
@@ -301,7 +302,7 @@ h5 {
   }
 
   .archive-text {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .gallery {
