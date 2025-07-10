@@ -433,3 +433,18 @@ h5 {
   margin-top: 6em;
   gap: 2rem;
 }
+
+* {
+  box-sizing: border-box;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.split {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.half {
+  max-width: 100%;
+}
