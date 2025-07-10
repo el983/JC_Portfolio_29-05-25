@@ -217,8 +217,8 @@ nav > div {
 
 .half p {
   padding: 1.5rem;
-  font-size: 1.3rem;
-  line-height: 0.7;
+  font-size: 1.2rem;
+  line-height: 1;
   text-transform: none;
   color: var(--color-accent);
   max-width: 90%;
@@ -398,7 +398,7 @@ h5 {
   }
 
   .half p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -433,3 +433,4 @@ h5 {
   margin-top: 6em;
   gap: 2rem;
 }
+
