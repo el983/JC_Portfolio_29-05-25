@@ -184,6 +184,8 @@ nav > div {
 .container-head {
   font-size: 3rem;
   color: #d17900;
+  font-family: "Zaslia";
+  font-feature-settings: "liga" 1, "kern" 1;
 }
 
 .slide {
@@ -250,6 +252,8 @@ nav > div {
   /* background: white; */
   font-size: 3rem;
   color: #d17900;
+  font-family: "Zaslia";
+  font-feature-settings: "liga" 1, "kern" 1;
 }
 
 .edu-body {
