@@ -180,7 +180,7 @@ nav > div {
 .container {
   height: 50%;
   width: 100%;
-  margin: 2vh auto;
+  margin: 2vh 2vw;
   display: flex;
   align-items: center;
   justify-content: center;
