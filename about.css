@@ -229,9 +229,9 @@ nav > div {
 
 /* ========== Responsive ========== */
 @media (max-width: 1024px) {
-  *{
+/*   *{
     overflow-x: hidden;
-  }
+  } */
   .dropdown-content a { font-size: 3rem; }
   .logo a { font-size: 1.8rem; }
   .about-text, .client-text { width: 85%; }
