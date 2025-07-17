@@ -166,6 +166,8 @@ nav > div {
 
 .about-text p {
   font-size: 1.5rem;
+  text-align: justify;
+  line-height: 1.8;
   text-transform: initial;
 }
 .about-text p b { font-size: 2rem; }
