@@ -223,6 +223,7 @@ nav > div {
   font-size: 1.2rem;
   line-height: 1;
   text-transform: none;
+  text-align: justify;
   color: var(--color-accent);
   max-width: 90%;
 }
