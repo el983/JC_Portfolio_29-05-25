@@ -20,13 +20,13 @@ const slides = [
     youtubeLink: 'https://youtu.be/lRUJPp3IKF4?si=w4MJ3YS87UbDEy5e',
     
   },
-  // {
-  //   date: '12 April 2020',
-  //   title: 'Lakeside Retreats',
-  //   videoUrl: 'https://www.youtube.com/embed/IUN664s7N-c',
-  //   youtubeLink: 'https://www.youtube.com/watch?v=IUN664s7N-c',
-  //   
-  // }
+  {
+    date: '22 July 2025',
+    title: 'Interview with B TALKZ',
+    videoUrl: 'https://www.linkedin.com/posts/cyber-kings-india_busiozine-joychowdhury-humancenteredleadership-activity-7351862038899380225-Se-X?utm_source=share&utm_medium=member_desktop&rcm=ACoAADnowtwBf9gVqAHV7F9eRKbKm1Ns6FkPW_s',
+    youtubeLink: 'https://www.linkedin.com/posts/cyber-kings-india_busiozine-joychowdhury-humancenteredleadership-activity-7351862038899380225-Se-X?utm_source=share&utm_medium=member_desktop&rcm=ACoAADnowtwBf9gVqAHV7F9eRKbKm1Ns6FkPW_s',
+    
+  }
   // {
   //     date: '2 September 2022',
   //   title: 'Technocrat 22 - Critical Thinking',
