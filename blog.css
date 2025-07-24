@@ -263,6 +263,7 @@ nav > div {
   background: #990000;
 }
 
+/* Mobile responsiveness */
 @media screen and (max-width: 768px) {
   .container {
     padding-top: 8vh;
@@ -276,12 +277,14 @@ nav > div {
   .content-section {
     max-width: 100%;
   }
-  .video-section iframe {
+  .video-section iframe,
+  .video-section .linked-image {
     width: 100%;
     height: auto;
     z-index: 2;
   }
 }
+
 
 @media (max-width: 1024px) {
   .panel {
