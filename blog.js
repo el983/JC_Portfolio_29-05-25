@@ -23,7 +23,13 @@ const slides = [
     videoUrl: 'image', // Special flag for image
     youtubeLink: 'https://www.linkedin.com/posts/cyber-kings-india_busiozine-joychowdhury-humancenteredleadership-activity-7351862038899380225-Se-X',
     image: 'https://media.licdn.com/dms/image/v2/D5622AQGls11yoI3Tog/feedshare-shrink_800/B56ZgcF775HMAg-/0/1752817984479?e=2147483647&v=beta&t=w8X63oLGB61RSFTpmZja6jLODGe_wnfGoKbawMVRU0Y' // Add your image path here
-  }
+  },
+   {
+    date: '16 February 2016',
+    title: 'Your Past has nothing to do with your Future',
+    videoUrl: 'https://www.youtube.com/embed/hrbCvbJOTdQ?si=IFqsXDyAfdqmUR7y',
+    youtubeLink: 'https://youtu.be/hrbCvbJOTdQ?si=IFqsXDyAfdqmUR7y',
+  },
 ];
 
 const container = document.getElementById('slidesContainer');
@@ -92,3 +98,4 @@ function updateTime() {
 }
 setInterval(updateTime, 1000);
 updateTime();
+
