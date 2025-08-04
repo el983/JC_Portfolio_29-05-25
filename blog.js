@@ -30,6 +30,12 @@ const slides = [
     videoUrl: 'https://www.youtube.com/embed/hrbCvbJOTdQ?si=IFqsXDyAfdqmUR7y',
     youtubeLink: 'https://youtu.be/hrbCvbJOTdQ?si=IFqsXDyAfdqmUR7y',
   },
+   {
+    date: '9 February 2017',
+    title: 'Fun with Emotional Intelligence',
+    videoUrl: 'https://www.youtube.com/embed/mg17RORmOwU?si=e13dbF3BJ_KIT161',
+    youtubeLink: 'https://youtu.be/mg17RORmOwU?si=e13dbF3BJ_KIT161',
+  }
 ];
 
 const container = document.getElementById('slidesContainer');
@@ -98,4 +104,5 @@ function updateTime() {
 }
 setInterval(updateTime, 1000);
 updateTime();
+
 
